@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Creator Toolkit - Free YouTube Creator Tools</title>
-<meta name="description" content="Free, honest tools for YouTube creators: thumbnail grabber, title and tag ideas, monetization progress calculator, and a channel audit checklist. No sign-up, no cost.">
+<meta name="description" content="Free, honest tools for YouTube creators: transcript download, channel stats lookup, keyword suggestions, title analyzer, thumbnail A/B preview, revenue estimator, chapters, upload planner and more. No sign-up, no cost.">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -19,8 +19,11 @@
   </a>
   <nav class="main-nav">
     <a href="#thumbnails">Thumbnails</a>
-    <a href="#titles">Titles &amp; Tags</a>
-    <a href="#monetization">Monetization</a>
+    <a href="#transcript">Transcripts</a>
+    <a href="#channel">Channel</a>
+    <a href="#keywords">Keywords</a>
+    <a href="#analyzer">Analyzer</a>
+    <a href="#revenue">Revenue</a>
     <a href="#audit">Audit</a>
   </nav>
   <button id="themeToggle" class="theme-toggle" aria-label="Switch between dark and light theme">
@@ -31,9 +34,9 @@
 <main id="top">
 
   <section class="hero">
-    <p class="eyebrow">Free forever &middot; No sign-up &middot; Runs in your browser</p>
+    <p class="eyebrow">Free forever &middot; No sign-up &middot; No ads or tracking</p>
     <h1>Grow your channel with tools that actually help.</h1>
-    <p class="lede">A clean toolkit for real YouTube creators. Grab thumbnails, shape better titles and tags, track your road to monetization, and audit your channel - all client-side, nothing stored on a server.</p>
+    <p class="lede">A clean toolkit for real YouTube creators. Download transcripts, research keywords, check titles, compare thumbnails, estimate revenue and audit your channel. Everything runs in your browser; a few lookups use a small free proxy that stores nothing.</p>
     <div class="hero-cta">
       <a class="btn btn-primary" href="#thumbnails">Open the toolkit</a>
       <a class="btn btn-ghost" href="https://github.com/devanasolver/youtube-creator-toolkit" rel="noopener">View on GitHub</a>
@@ -130,15 +133,249 @@
     <div id="auditGroups"></div>
   </section>
 
+  <!-- TRANSCRIPT DOWNLOAD -->
+  <section id="transcript" class="tool glass">
+    <div class="tool-head">
+      <span class="tool-num">05</span>
+      <div>
+        <h2>Transcript Download</h2>
+        <p>Paste a YouTube link and get the video's captions as copyable text, or download them as .txt, .srt or .vtt.</p>
+      </div>
+    </div>
+    <div class="field-row">
+      <input type="url" id="trUrl" placeholder="https://www.youtube.com/watch?v=..." autocomplete="off" spellcheck="false">
+      <button class="btn btn-primary" id="trFetch">Get transcript</button>
+    </div>
+    <p class="hint">Reads the public captions YouTube already shows viewers (creator-uploaded or auto-generated). It does not download video or audio. Videos with captions turned off have nothing to fetch.</p>
+    <div id="trStatus" class="status" hidden></div>
+    <div id="trResult" hidden>
+      <div class="result-meta"><strong id="trTitle"></strong><span id="trInfo"></span></div>
+      <div class="opt-row">
+        <label class="opt" id="trLangWrap" hidden>Language <select id="trLang"></select></label>
+        <label class="opt chk"><input type="checkbox" id="trStamps"> Timestamps in text</label>
+      </div>
+      <textarea id="trText" class="out" rows="12" readonly></textarea>
+      <div class="btn-row">
+        <button class="btn btn-mini" id="trCopy">Copy text</button>
+        <button class="btn btn-mini" id="trTxt">Download .txt</button>
+        <button class="btn btn-mini" id="trSrt">Download .srt</button>
+        <button class="btn btn-mini" id="trVtt">Download .vtt</button>
+      </div>
+    </div>
+    <h3 class="result-label sub">Have your own .srt or .vtt file? Clean it or convert it</h3>
+    <div class="field-row">
+      <input type="file" id="cvFile" accept=".srt,.vtt,.txt,text/vtt,text/plain" class="file">
+    </div>
+    <textarea id="cvIn" class="out" rows="5" placeholder="...or paste SRT / VTT text here"></textarea>
+    <div class="opt-row">
+      <label class="opt chk"><input type="checkbox" id="cvTags" checked> Remove tags like &lt;i&gt; and {\an8}</label>
+      <label class="opt chk"><input type="checkbox" id="cvBracket"> Remove [music] and (applause) cues</label>
+      <label class="opt chk"><input type="checkbox" id="cvDupes" checked> Merge repeated lines</label>
+      <label class="opt">Shift timing (seconds) <input type="number" id="cvShift" value="0" step="0.1" class="narrow"></label>
+    </div>
+    <div id="cvStatus" class="status" hidden></div>
+    <div id="cvResult" hidden>
+      <textarea id="cvOut" class="out" rows="8" readonly></textarea>
+      <div class="btn-row">
+        <button class="btn btn-mini" id="cvCopy">Copy clean text</button>
+        <button class="btn btn-mini" id="cvTxt">Download .txt</button>
+        <button class="btn btn-mini" id="cvSrt">Download .srt</button>
+        <button class="btn btn-mini" id="cvVtt">Download .vtt</button>
+      </div>
+    </div>
+    <p class="hint">The file is processed in your browser and never uploaded.</p>
+  </section>
+
+  <!-- CHANNEL STATS -->
+  <section id="channel" class="tool glass">
+    <div class="tool-head">
+      <span class="tool-num">06</span>
+      <div>
+        <h2>Channel Stats Lookup</h2>
+        <p>Look up any public channel: subscribers (approximate), recent upload pace and how its latest videos perform.</p>
+      </div>
+    </div>
+    <div class="field-row">
+      <input type="text" id="chQuery" placeholder="@handle, channel link or channel ID" autocomplete="off" spellcheck="false">
+      <button class="btn btn-primary" id="chGo">Look up</button>
+    </div>
+    <p class="hint">Limited by design: this uses YouTube's public feed, which lists only the 15 most recent uploads. Subscriber counts are rounded by YouTube and sometimes missing. No earnings or total-views data, and nothing here is estimated or invented.</p>
+    <div id="chStatus" class="status" hidden></div>
+    <div id="chResult" hidden>
+      <div class="result-meta"><a id="chName" target="_blank" rel="noopener"></a><span id="chSubs"></span></div>
+      <div class="stat-grid" id="chStats"></div>
+      <div class="table-wrap"><table class="tbl"><thead><tr><th>Video</th><th>Posted</th><th>Views</th><th>Likes</th><th></th></tr></thead><tbody id="chRows"></tbody></table></div>
+      <p class="hint" id="chNote"></p>
+    </div>
+  </section>
+
+  <!-- KEYWORDS -->
+  <section id="keywords" class="tool glass">
+    <div class="tool-head">
+      <span class="tool-num">07</span>
+      <div>
+        <h2>Keyword &amp; Tag Suggestions</h2>
+        <p>See what viewers actually type into YouTube search for your topic, and copy them as tags.</p>
+      </div>
+    </div>
+    <div class="field-row">
+      <input type="text" id="kwTopic" placeholder="e.g. video editing" autocomplete="off">
+      <button class="btn btn-primary" id="kwGo">Find keywords</button>
+    </div>
+    <p class="hint">Live YouTube search autocomplete. It shows real searches but not search volume or competition.</p>
+    <div id="kwStatus" class="status" hidden></div>
+    <div id="kwResult" hidden>
+      <h3 class="result-label">Suggestions <span id="kwCount" class="muted"></span> <button class="btn btn-mini" id="kwCopyList">Copy list</button> <button class="btn btn-mini" id="kwCopyTags">Copy as tags (500 char limit)</button></h3>
+      <div id="kwCloud" class="tag-cloud"></div>
+      <h3 class="result-label">Hashtags <button class="btn btn-mini" id="kwCopyHash">Copy</button></h3>
+      <div id="kwHash" class="tag-cloud"></div>
+      <p class="hint">YouTube shows the first three hashtags above your title and ignores all of them if you use more than 15.</p>
+    </div>
+  </section>
+
+  <!-- TITLE / DESCRIPTION ANALYZER -->
+  <section id="analyzer" class="tool glass">
+    <div class="tool-head">
+      <span class="tool-num">08</span>
+      <div>
+        <h2>Title &amp; Description Analyzer</h2>
+        <p>Score your title and description against YouTube's published best practices before you upload.</p>
+      </div>
+    </div>
+    <div class="form-grid">
+      <label>Target keyword (optional)<input type="text" id="anKw" placeholder="e.g. video editing"></label>
+      <label>Title <span class="count" id="anTitleCount">0</span><input type="text" id="anTitle" placeholder="Your video title"></label>
+      <label>Description <span class="count" id="anDescCount">0</span><textarea id="anDesc" class="out" rows="6" placeholder="Paste your description"></textarea></label>
+      <label>Tags, comma separated (optional) <span class="count" id="anTagCount">0</span><input type="text" id="anTags" placeholder="tag one, tag two"></label>
+    </div>
+    <div id="anResult" hidden>
+      <div class="score-row"><div class="score-ring" id="anRing"><span id="anScore">0</span></div><p id="anVerdict"></p></div>
+      <ul class="checks" id="anChecks"></ul>
+    </div>
+    <p class="hint">A checklist of good practice, not a ranking prediction. Nobody outside YouTube can score what the algorithm will do.</p>
+  </section>
+
+  <!-- THUMBNAIL A/B -->
+  <section id="abtest" class="tool glass">
+    <div class="tool-head">
+      <span class="tool-num">09</span>
+      <div>
+        <h2>Thumbnail Preview &amp; A/B Compare</h2>
+        <p>See two thumbnail and title options side by side as they look in a desktop feed, a phone feed and the suggested sidebar.</p>
+      </div>
+    </div>
+    <div class="ab-inputs">
+      <div class="ab-col">
+        <h3>Option A</h3>
+        <input type="file" accept="image/*" class="file" id="abImgA">
+        <input type="text" id="abTitleA" placeholder="Title A" value="How I edit videos 10x faster">
+      </div>
+      <div class="ab-col">
+        <h3>Option B</h3>
+        <input type="file" accept="image/*" class="file" id="abImgB">
+        <input type="text" id="abTitleB" placeholder="Title B" value="The editing trick nobody tells you">
+      </div>
+    </div>
+    <div class="opt-row">
+      <label class="opt">Channel name <input type="text" id="abChan" value="Your Channel" class="narrow wide"></label>
+      <span class="seg" id="abSurface"><button data-s="dark" class="on">Dark feed</button><button data-s="light">Light feed</button></span>
+    </div>
+    <div class="ab-stage" id="abStage" data-surface="dark"></div>
+    <p class="hint">Images stay in your browser. This is a visual mock-up to judge legibility at small sizes, not YouTube's own Test &amp; Compare feature (that lives in YouTube Studio and measures real viewers).</p>
+  </section>
+
+  <!-- REVENUE -->
+  <section id="revenue" class="tool glass">
+    <div class="tool-head">
+      <span class="tool-num">10</span>
+      <div>
+        <h2>Revenue Estimator</h2>
+        <p>Turn your views and your own RPM into a realistic earnings range.</p>
+      </div>
+    </div>
+    <div class="calc-grid">
+      <label>Monthly long-form views<input type="number" id="rvViews" min="0" value="50000" inputmode="numeric"></label>
+      <label>Monthly Shorts views<input type="number" id="rvShorts" min="0" value="0" inputmode="numeric"></label>
+      <label>RPM low ($ per 1,000 views)<input type="number" id="rvLow" min="0" step="0.1" value="1" inputmode="decimal"></label>
+      <label>RPM high ($ per 1,000 views)<input type="number" id="rvHigh" min="0" step="0.1" value="4" inputmode="decimal"></label>
+      <label>Shorts RPM ($)<input type="number" id="rvShortRpm" min="0" step="0.01" value="0.05" inputmode="decimal"></label>
+    </div>
+    <div class="stat-grid" id="rvOut"></div>
+    <p class="hint">RPM is what you earn per 1,000 views after YouTube's cut and it varies a lot by niche, country and season. The defaults are placeholders: open YouTube Studio, Analytics, Revenue and enter your own. Only creators in the Partner Program earn ad revenue.</p>
+  </section>
+
+  <!-- CHAPTERS -->
+  <section id="chapters" class="tool glass">
+    <div class="tool-head">
+      <span class="tool-num">11</span>
+      <div>
+        <h2>Chapters Checker &amp; Formatter</h2>
+        <p>Paste your timestamps, fix them and check they meet YouTube's chapter rules.</p>
+      </div>
+    </div>
+    <textarea id="chIn" class="out" rows="7" placeholder="0:00 Intro&#10;1:24 Setting up&#10;5:10 The main edit&#10;9:42 Export settings"></textarea>
+    <div class="btn-row"><button class="btn btn-primary" id="chFix">Check &amp; format</button></div>
+    <div id="chkResult" hidden>
+      <ul class="checks" id="chkList"></ul>
+      <textarea id="chkOut" class="out" rows="6" readonly></textarea>
+      <div class="btn-row"><button class="btn btn-mini" id="chkCopy">Copy for description</button></div>
+    </div>
+    <p class="hint">YouTube needs the first chapter at 0:00, at least three chapters, and each at least 10 seconds long.</p>
+  </section>
+
+  <!-- UPLOAD TIME -->
+  <section id="planner" class="tool glass">
+    <div class="tool-head">
+      <span class="tool-num">12</span>
+      <div>
+        <h2>Upload Time Planner</h2>
+        <p>Pick when your audience is online and get the publish time in your own time zone.</p>
+      </div>
+    </div>
+    <div class="calc-grid">
+      <label>Audience time zone<select id="plZone"></select></label>
+      <label>When they are most active (their local time)<input type="time" id="plPeak" value="19:00"></label>
+      <label>Publish this many hours earlier<input type="number" id="plLead" min="0" max="12" step="0.5" value="2" inputmode="decimal"></label>
+    </div>
+    <div class="table-wrap"><table class="tbl"><thead><tr><th>Day</th><th>Publish at (your time)</th><th>Audience sees it at</th></tr></thead><tbody id="plRows"></tbody></table></div>
+    <p class="hint">There is no universal best time. Find your real peak in YouTube Studio, Analytics, Audience, "When your viewers are on YouTube", then enter it here. Publishing a little before the peak gives the video time to be processed and indexed.</p>
+  </section>
+
+  <!-- CC FOOTAGE -->
+  <section id="footage" class="tool glass">
+    <div class="tool-head">
+      <span class="tool-num">13</span>
+      <div>
+        <h2>Free &amp; CC Footage Finder</h2>
+        <p>Jump straight into searches for reusable footage, with a ready-made credit line.</p>
+      </div>
+    </div>
+    <div class="field-row">
+      <input type="text" id="ftQuery" placeholder="e.g. city timelapse" autocomplete="off">
+    </div>
+    <div class="link-grid" id="ftLinks"></div>
+    <h3 class="result-label sub">Attribution helper</h3>
+    <div class="form-grid two">
+      <label>Title<input type="text" id="atTitle" placeholder="Clip title"></label>
+      <label>Author<input type="text" id="atAuthor" placeholder="Creator name"></label>
+      <label>Source link<input type="text" id="atUrl" placeholder="https://..."></label>
+      <label>License<select id="atLic"><option>CC BY 3.0</option><option>CC BY 4.0</option><option>CC BY-SA 4.0</option><option>CC0 / Public domain</option><option>Pexels License</option><option>Pixabay Content License</option></select></label>
+    </div>
+    <textarea id="atOut" class="out" rows="3" readonly></textarea>
+    <div class="btn-row"><button class="btn btn-mini" id="atCopy">Copy credit line</button></div>
+    <p class="hint">Always open the clip and read its own license before use. "Creative Commons" on YouTube means CC BY: you can reuse it with credit, but you are still responsible for checking the uploader had the rights.</p>
+  </section>
+
 </main>
 
 <footer class="site-footer">
   <img src="assets/img/logo.svg" alt="" width="28" height="28">
   <p>Creator Toolkit - free tools for YouTube creators. Open source under the MIT license.</p>
-  <p class="fine">Not affiliated with YouTube or Google. Everything runs in your browser; no data leaves your device.</p>
+  <p class="fine">Not affiliated with YouTube or Google. Most tools run entirely in your browser. Transcript, channel and keyword lookups pass the link or text you enter through a small free proxy that stores nothing.</p>
   <a href="https://github.com/devanasolver/youtube-creator-toolkit" rel="noopener">Star it on GitHub</a>
 </footer>
 
 <script src="assets/js/app.js"></script>
+<script src="assets/js/tools.js"></script>
 </body>
 </html>
