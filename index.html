@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creator Toolkit - Free YouTube Creator Tools</title>
+<meta name="description" content="Free, honest tools for YouTube creators: thumbnail grabber, title and tag ideas, monetization progress calculator, and a channel audit checklist. No sign-up, no cost.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<div class="glow glow-a"></div>
+<div class="glow glow-b"></div>
+
+<header class="site-header">
+  <a class="brand" href="#top">
+    <img src="assets/img/logo.svg" alt="Creator Toolkit logo" width="40" height="40">
+    <span>Creator Toolkit</span>
+  </a>
+  <nav class="main-nav">
+    <a href="#thumbnails">Thumbnails</a>
+    <a href="#titles">Titles &amp; Tags</a>
+    <a href="#monetization">Monetization</a>
+    <a href="#audit">Audit</a>
+  </nav>
+  <button id="themeToggle" class="theme-toggle" aria-label="Switch between dark and light theme">
+    <span class="icon-sun">&#9728;</span><span class="icon-moon">&#9790;</span>
+  </button>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <p class="eyebrow">Free forever &middot; No sign-up &middot; Runs in your browser</p>
+    <h1>Grow your channel with tools that actually help.</h1>
+    <p class="lede">A clean toolkit for real YouTube creators. Grab thumbnails, shape better titles and tags, track your road to monetization, and audit your channel - all client-side, nothing stored on a server.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#thumbnails">Open the toolkit</a>
+      <a class="btn btn-ghost" href="https://github.com/devanasolver/youtube-creator-toolkit" rel="noopener">View on GitHub</a>
+    </div>
+  </section>
+
+  <!-- THUMBNAIL GRABBER -->
+  <section id="thumbnails" class="tool glass">
+    <div class="tool-head">
+      <span class="tool-num">01</span>
+      <div>
+        <h2>Thumbnail Grabber</h2>
+        <p>Paste any YouTube link and pull every available thumbnail size in full quality.</p>
+      </div>
+    </div>
+    <div class="field-row">
+      <input type="url" id="thumbUrl" placeholder="https://www.youtube.com/watch?v=..." autocomplete="off" spellcheck="false">
+      <button class="btn btn-primary" id="thumbFetch">Get thumbnails</button>
+    </div>
+    <p class="hint" id="thumbHint">Works with watch links, youtu.be, Shorts, embeds and bare video IDs.</p>
+    <div id="thumbResults" class="thumb-grid" hidden></div>
+  </section>
+
+  <!-- TITLE & TAG IDEAS -->
+  <section id="titles" class="tool glass">
+    <div class="tool-head">
+      <span class="tool-num">02</span>
+      <div>
+        <h2>Title &amp; Tag Ideas</h2>
+        <p>Type your video topic and get clickable title angles plus a ready-to-paste tag set.</p>
+      </div>
+    </div>
+    <div class="field-row">
+      <input type="text" id="topicInput" placeholder="e.g. indoor gardening for beginners" autocomplete="off">
+      <button class="btn btn-primary" id="titleGen">Generate ideas</button>
+    </div>
+    <div id="titleResults" hidden>
+      <h3 class="result-label">Title angles</h3>
+      <ul id="titleList" class="idea-list"></ul>
+      <h3 class="result-label">Tags <button class="btn btn-mini" id="copyTags">Copy all</button></h3>
+      <div id="tagCloud" class="tag-cloud"></div>
+    </div>
+  </section>
+
+  <!-- MONETIZATION CALCULATOR -->
+  <section id="monetization" class="tool glass">
+    <div class="tool-head">
+      <span class="tool-num">03</span>
+      <div>
+        <h2>Monetization Progress</h2>
+        <p>Enter your current stats and see exactly how far you are from the YouTube Partner Program.</p>
+      </div>
+    </div>
+    <div class="calc-grid">
+      <label>Subscribers
+        <input type="number" id="statSubs" min="0" value="0" inputmode="numeric">
+      </label>
+      <label>Public watch hours (last 365 days)
+        <input type="number" id="statHours" min="0" value="0" inputmode="numeric">
+      </label>
+      <label>Shorts views (last 90 days)
+        <input type="number" id="statShorts" min="0" value="0" inputmode="numeric">
+      </label>
+    </div>
+    <div class="progress-block">
+      <div class="progress-row">
+        <div class="progress-info"><strong>Full YPP</strong><span>1,000 subs + 4,000 watch hours, or 10M Shorts views</span></div>
+        <div class="progress-track"><div class="progress-fill" id="barFull"></div></div>
+        <span class="progress-pct" id="pctFull">0%</span>
+      </div>
+      <div class="progress-row">
+        <div class="progress-info"><strong>Fan funding tier</strong><span>500 subs + 3,000 watch hours, or 3M Shorts views</span></div>
+        <div class="progress-track"><div class="progress-fill alt" id="barFan"></div></div>
+        <span class="progress-pct" id="pctFan">0%</span>
+      </div>
+      <p class="hint" id="calcVerdict"></p>
+    </div>
+  </section>
+
+  <!-- CHANNEL AUDIT -->
+  <section id="audit" class="tool glass">
+    <div class="tool-head">
+      <span class="tool-num">04</span>
+      <div>
+        <h2>Channel Audit Checklist</h2>
+        <p>Work through the same checks pros run before asking why a channel stalled. Saved on this device.</p>
+      </div>
+    </div>
+    <div class="audit-score">
+      <div class="progress-track big"><div class="progress-fill" id="auditBar"></div></div>
+      <span class="progress-pct" id="auditPct">0%</span>
+      <button class="btn btn-mini" id="auditReset">Reset</button>
+    </div>
+    <div id="auditGroups"></div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <img src="assets/img/logo.svg" alt="" width="28" height="28">
+  <p>Creator Toolkit - free tools for YouTube creators. Open source under the MIT license.</p>
+  <p class="fine">Not affiliated with YouTube or Google. Everything runs in your browser; no data leaves your device.</p>
+  <a href="https://github.com/devanasolver/youtube-creator-toolkit" rel="noopener">Star it on GitHub</a>
+</footer>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
