@@ -279,3 +279,11 @@ input[type=time]{width:auto;color:var(--text)}
 .tool-shortcuts a{color:var(--accent-2);font-weight:700;text-underline-offset:4px}
 [data-theme="light"]{--accent-2:#d92146}
 [data-theme="light"] .btn-primary{background:linear-gradient(135deg,#df2447,#c9153b)}
+
+/* ---------- blog links ---------- */
+.blog-link{display:none;color:var(--muted);text-decoration:none;font-weight:700;font-size:16px;padding:9px 16px;border-radius:12px;border:1px solid var(--card-border);background:var(--card)}
+.blog-link:hover,.blog-link.active{color:var(--text);border-color:var(--accent-2)}
+@media (max-width:960px){.blog-link{display:inline-block;margin-left:auto}.btn-support{margin-left:0!important}}
+.guide-link{margin-top:18px;padding-top:14px;border-top:1px dashed var(--card-border);font-size:15px;color:var(--muted)}
+.guide-link a{color:var(--accent-2);font-weight:700;text-decoration:none}
+.guide-link a:hover{text-decoration:underline}

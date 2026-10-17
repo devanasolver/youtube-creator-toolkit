@@ -1,0 +1,1493 @@
+# Creator Toolkit - all guides
+
+# Do YouTube Tags Matter? How to See a Video's Tags and What to Do With Them
+
+Source: https://devanasolver.github.io/youtube-creator-toolkit/blog/youtube-tags-extractor-do-tags-matter/
+Published: 2026-10-18 | Updated: 2026-10-18 | Site: Creator Toolkit (free YouTube creator tools)
+Related free tool: YouTube Tags Extractor - https://devanasolver.github.io/youtube-creator-toolkit/#tag-extractor
+
+**TL;DR:** YouTube says tags can help when your topic is often misspelled and otherwise "play a minimal role" in discovery. The Tags Extractor shows the tags a public video exposes, so you can study how others describe a topic. Not every video exposes tags, and copying them is not a ranking shortcut. Spend your time on the title, thumbnail and the video itself.
+
+Tags are the hidden keywords creators can add to a video in YouTube Studio. Viewers do not see them on the page, which is why people ask how to find them. Before you spend time on them, it helps to know how much they matter.
+
+## What YouTube says about tags
+
+On its [video settings page](https://support.google.com/youtube/answer/57404), YouTube describes the tags field as a place to "add descriptive keywords to help correct search mistakes." It then says: "Tags can be useful if the content of your video is commonly misspelled. Otherwise, tags play a minimal role in your video's discovery."
+
+That is the whole official guidance. It does not say tags are a ranking lever. A title that says what the video is, a clear thumbnail and a video people watch matter far more.
+
+## How to see a YouTube video's tags
+
+1. Copy the video link or ID.
+2. Paste it into the [Tags Extractor](https://devanasolver.github.io/youtube-creator-toolkit/#tag-extractor).
+3. If the video exposes tags in its public page data, they appear as a list.
+4. Copy them as text for your notes.
+
+The tool reads public page metadata through a small free proxy. If the video does not expose tags, or YouTube blocks the lookup, it says so. It does not guess.
+
+## Tags are not hashtags
+
+These are two different things, and people mix them up:
+
+- **Tags** are the keyword list in the Studio details. Viewers do not see them. YouTube's API documents a limit of 500 characters for the whole list, including the commas.
+- **Hashtags** begin with # and appear in the title or description. According to YouTube's [hashtag help page](https://support.google.com/youtube/answer/6390658), up to three show above the video title, and a video with more than 60 hashtags has all of them ignored.
+
+The Tags Extractor only shows tags. For hashtags, see the [keyword guide](https://devanasolver.github.io/youtube-creator-toolkit/blog/youtube-keyword-research-with-autocomplete/).
+
+## Is copying a competitor's tags a good idea?
+
+Not as a shortcut. Their tags describe their video, not yours. If your video is about something different, wrong tags can look like misleading metadata, and YouTube's hashtag rules already warn against tags unrelated to the content. What the tool is good for:
+
+- **Vocabulary.** See which words and spellings others use for the topic.
+- **Misspellings.** Spot common wrong spellings worth adding to your own tags.
+- **Gaps.** Notice a related subtopic you forgot to cover.
+
+Then write your own tags that describe your video honestly.
+
+## What to do instead
+
+1. Spend your effort on the title and the first lines of the description. See the [title and description checklist](https://devanasolver.github.io/youtube-creator-toolkit/blog/youtube-title-and-description-checklist/).
+2. Add a short tag list: the main phrase, a few variants, and any common misspellings. Stop there.
+3. Use [keyword suggestions](https://devanasolver.github.io/youtube-creator-toolkit/#keywords) for ideas straight from YouTube search predictions.
+4. Check the results in Studio's analytics, where you can see how people actually found your video.
+
+## What the tool does not do
+
+- It does not show tags for videos that do not expose them.
+- It does not rank tags or say which are "good".
+- It does not show another creator's analytics.
+- It does not promise that copying tags will improve views.
+
+## FAQ
+
+### Do tags help YouTube SEO?
+A little, for misspellings. YouTube says tags play a minimal role in discovery. The title, thumbnail, description and viewer behavior matter more.
+
+### How many tags should I use?
+There is no ideal count. A handful that describe the video is enough. YouTube's API limits the total to 500 characters.
+
+### Can I see the tags on any YouTube video?
+Only if the video exposes them in its public page data. Some do not.
+
+### What is the difference between tags and hashtags?
+Tags are hidden keywords in the video details. Hashtags start with # and show in the title or description. YouTube shows up to three above the video title.
+
+### Is it okay to copy another video's tags?
+Use them for research, but write your own to match your video. Unrelated or misleading tags go against YouTube's metadata rules.
+
+## Sources
+
+- https://support.google.com/youtube/answer/57404
+- https://developers.google.com/youtube/v3/docs/videos
+- https://support.google.com/youtube/answer/6390658
+
+---
+From Creator Toolkit: https://devanasolver.github.io/youtube-creator-toolkit/
+
+====
+
+# How to Make a YouTube Subscribe Link (and Why It Cannot Force a Subscribe)
+
+Source: https://devanasolver.github.io/youtube-creator-toolkit/blog/youtube-subscribe-link/
+Published: 2026-10-17 | Updated: 2026-10-18 | Site: Creator Toolkit (free YouTube creator tools)
+Related free tool: Subscribe Link Generator - https://devanasolver.github.io/youtube-creator-toolkit/#subscribe-links
+
+**TL;DR:** Add ?sub_confirmation=1 to a YouTube channel URL and, on the website, YouTube can show a prompt asking the viewer to confirm a subscription. The Subscribe Link Generator builds the link from an @handle, channel URL or channel ID. The viewer still has to confirm. The prompt may not appear in the mobile app, in some browsers, or for people who already subscribe.
+
+A subscribe link is a normal channel link with one extra piece on the end. Creators use it in descriptions, emails and social bios so a click leads a viewer straight to the question "Do you want to subscribe?".
+
+## How to make a YouTube subscribe link
+
+1. Open the [Subscribe Link Generator](https://devanasolver.github.io/youtube-creator-toolkit/#subscribe-links).
+2. Paste a channel @handle, a channel URL, or a channel ID that starts with `UC`.
+3. Press the button. If you gave a handle, the tool looks up the channel ID for you.
+4. Copy the link, or download the QR code.
+5. Open it yourself in a private window and on your phone to see what viewers will see.
+
+## What the link looks like
+
+A subscribe link is your channel address with `sub_confirmation=1` added:
+
+```
+https://www.youtube.com/channel/UCxxxxxxxxxxxxxxxxxxxxxx?sub_confirmation=1
+```
+
+The generator builds it from the channel ID, which does not change when a channel renames itself. You can build one by hand from a handle URL too, by adding `?sub_confirmation=1` to the end.
+
+## What it does, and what it does not
+
+**It can show a subscribe prompt.** On YouTube's website, a viewer who opens the link can see a confirmation window asking them to subscribe.
+
+**It never subscribes anyone by itself.** The viewer has to press the button. Be wary of anyone who offers "auto subscribe" links. You cannot subscribe another person's account without them acting.
+
+**It may not show a prompt at all.** The prompt may not appear in the mobile app, in some browsers, or for viewers who already subscribe. It can also change when YouTube changes its site. We could not find the parameter described on YouTube's own help pages, so treat it as a widely used convention, not a promise.
+
+**It is not a growth hack.** It removes one step. The reason someone subscribes is still your content.
+
+## Handles, IDs and which to use
+
+YouTube's [channel URL help page](https://support.google.com/youtube/answer/6180214) lists the address types a channel can have: the ID-based URL, the handle URL, custom URLs and legacy usernames. The [handle page](https://support.google.com/youtube/answer/11585688) says handles start with @ and identify a channel. For a link you plan to keep for years, the ID is the most stable, since it does not change if you edit your handle. The generator resolves the handle to the ID for you using the same free lookup as the [Channel Stats Lookup](https://devanasolver.github.io/youtube-creator-toolkit/blog/youtube-channel-stats-lookup-what-public-data-shows/).
+
+## Using it well
+
+- Put it where a subscribe request is natural, such as the end of an email or a "start here" page.
+- Say what the viewer gets. "New video every Friday" is better than "please subscribe".
+- Do not use it in a way that tricks people, for example hiding it behind a misleading button.
+- If the link is for a phone bio, also look at the [YouTube App Link Maker](https://devanasolver.github.io/youtube-creator-toolkit/blog/youtube-app-link-for-bio-links/).
+
+## FAQ
+
+### How do I make a YouTube subscribe link?
+Take your channel URL and add ?sub_confirmation=1 at the end, or paste your handle or channel ID into the Subscribe Link Generator.
+
+### Does a subscribe link subscribe people automatically?
+No. At most it shows a prompt that the viewer has to confirm.
+
+### Why does the prompt not appear for some people?
+It may not show in the mobile app or some browsers, and not for people who already subscribe. It can also change when YouTube updates its site.
+
+### Where do I find my channel ID?
+YouTube's help page says to sign in, select your profile picture, then Settings, then Advanced settings, where you must be the channel's primary owner to see it. You can also read it from the address of a channel page that has the form /channel/UC..., or let the generator look it up from an @handle.
+
+### Does the generator cost anything or need a login?
+No. It is free and needs no sign-in.
+
+## Sources
+
+- https://support.google.com/youtube/answer/6180214
+- https://support.google.com/youtube/answer/11585688
+- https://support.google.com/youtube/answer/3250431
+
+---
+From Creator Toolkit: https://devanasolver.github.io/youtube-creator-toolkit/
+
+====
+
+# How to Check the Public Stats of Any YouTube Video (and What They Hide)
+
+Source: https://devanasolver.github.io/youtube-creator-toolkit/blog/check-public-stats-of-any-youtube-video/
+Published: 2026-10-17 | Updated: 2026-10-18 | Site: Creator Toolkit (free YouTube creator tools)
+Related free tool: YouTube Video Public Stats tool - https://devanasolver.github.io/youtube-creator-toolkit/#video-stats
+
+**TL;DR:** Paste a video link into the Video Public Stats tool to see its public views, likes when shown, upload date, duration and a simple like-to-view rate. These are public numbers only. Counts can be delayed or unavailable, and YouTube says it may slow, freeze or change counts while it checks they are legitimate. Watch time, retention, traffic sources and earnings are only visible to the owner.
+
+You can see a video's view count on its page, of course. The [Video Public Stats tool](https://devanasolver.github.io/youtube-creator-toolkit/#video-stats) puts the useful public details in one place and does one small calculation for you. It is mainly for research and for checking your own videos against someone else's.
+
+## How to check the public stats of a YouTube video
+
+1. Copy the video link (or just the 11-character video ID).
+2. Paste it into the [Video Public Stats tool](https://devanasolver.github.io/youtube-creator-toolkit/#video-stats) and run it.
+3. Read the result: views, likes when the video shows them, upload date, duration and the like-to-view rate.
+4. Open the video from the link in the result if you want to check anything against the page itself.
+
+## What the tool shows
+
+- **Views.** The public view count at the time of the lookup.
+- **Likes.** Only if the video shows them. Some do not, and then the tool says it is unavailable.
+- **Upload date and duration.** From the video's public page data.
+- **Like-to-view rate.** Likes divided by views. That is all it is. It is not a total "engagement rate", because it ignores comments, shares, saves and watch time.
+
+It uses the public information on the video page and passes your link through a small free proxy that stores nothing.
+
+## Why view counts can look wrong
+
+YouTube's [page on how engagement metrics are counted](https://support.google.com/youtube/answer/2991785) is useful here:
+
+- It says that beginning August 24, 2026, views are counted the moment a video starts to play across all formats, including Shorts, long-form videos and live streams.
+- It says YouTube's systems need time to work out which views, likes and subscriptions are legitimate, and that metrics may take time to appear in the first few hours after publishing.
+- It says YouTube may temporarily slow down, freeze or change a metric count, and discard low-quality playbacks, such as watching the same video on several devices or in many tabs at once.
+- It says partner earnings and eligibility use their own measures ("engaged views" for earnings and "qualified views" for eligibility), so the public count is not the same as what is paid.
+
+So a number you see today can differ from the same number tomorrow, and a public view count is not a revenue figure.
+
+## What you cannot see, and why
+
+Public pages do not include:
+
+- Audience retention. This is in the owner's [retention report](https://support.google.com/youtube/answer/9314415) in Studio.
+- Impressions and click-through rate, which the owner sees in Studio. YouTube's [click-through rate FAQ](https://support.google.com/youtube/answer/7628154) says half of all channels and videos have an impressions click-through rate that ranges between 2% and 10%, and that it varies by content type, audience and where the impressions occurred. So a CTR number alone does not say much, and you cannot see anyone else's anyway.
+- Traffic sources, demographics and watch time.
+- Revenue.
+
+If a site shows you an exact earning figure for someone else's video, it is a guess.
+
+## Good ways to use public stats
+
+- Compare the first week of a competitor's videos with yours, remembering you cannot see impressions.
+- Notice which topics a channel repeats. Repeats often mean the audience responded.
+- Keep a simple sheet for your own videos with date, views at 7 days and 30 days. Patterns appear quickly.
+
+## FAQ
+
+### Can I see someone else's YouTube analytics?
+No. You can only see public numbers. Analytics such as watch time, retention and revenue are only visible to the channel owner in YouTube Studio.
+
+### What is a good like-to-view rate?
+There is no standard number. It varies by topic and audience, so compare videos from the same channel or niche rather than looking for one target.
+
+### Why does a video show no likes?
+The creator can hide the like count, or the data is unavailable. The tool shows "unavailable" instead of guessing.
+
+### Why is the view count not moving?
+YouTube says it may temporarily slow or freeze counts while it validates views. Check again later.
+
+### Can I see how long ago a video was uploaded?
+Yes, the tool shows the upload date when it is publicly available.
+
+## Sources
+
+- https://support.google.com/youtube/answer/2991785
+- https://support.google.com/youtube/answer/9314415
+- https://support.google.com/youtube/answer/7628154
+
+---
+From Creator Toolkit: https://devanasolver.github.io/youtube-creator-toolkit/
+
+====
+
+# How to Make a YouTube Link That Opens the App From Your Bio
+
+Source: https://devanasolver.github.io/youtube-creator-toolkit/blog/youtube-app-link-for-bio-links/
+Published: 2026-10-16 | Updated: 2026-10-18 | Site: Creator Toolkit (free YouTube creator tools)
+Related free tool: YouTube App Link Maker - https://devanasolver.github.io/youtube-creator-toolkit/#app-links
+
+**TL;DR:** Links shared inside other apps often open in that app's built-in browser, not the YouTube app. The YouTube App Link Maker creates a share link that opens a small page which tries the YouTube app on your viewer's phone, with a button and a normal web fallback. It is best effort. Instagram, TikTok, Facebook and Threads can block it, and no website can force the app to open.
+
+When someone taps a YouTube link inside Instagram, TikTok, Facebook or Threads, it often opens in that app's own browser. There the viewer is not signed in, cannot easily subscribe, and may not see their usual recommendations. A good link tries to get them into the real YouTube app, and still works if it cannot.
+
+## How to make a YouTube link that tries to open the app
+
+1. Copy the YouTube link you want to share. It can be a watch link, a youtu.be link, a Shorts link, a playlist, a channel with an @handle, or a channel ID.
+2. Paste it into the [YouTube App Link Maker](https://devanasolver.github.io/youtube-creator-toolkit/#app-links) and press **Make app link**.
+3. Copy the share link, or download the QR code.
+4. Put it in your bio or post.
+5. **Test it on your own phone**, in the real app where you will use it, on both iPhone and Android if you can.
+
+## What happens when someone taps the link
+
+The share link goes to a small page on this site. The page reads the destination and then:
+
+- **On Android,** it tries an app intent that targets the YouTube app, and sets a fallback address for when the app cannot open. The fallback address feature is documented in [Chrome's Android intents guide](https://developer.chrome.com/docs/android/intents): if the intent does not resolve, the user can be redirected to the fallback URL.
+- **On iPhone,** it tries YouTube's URL scheme. It also tries an alternate form for videos if the first does not work.
+- **On desktop,** it sends the viewer to normal YouTube.
+- If the app does not open, there is an **Open YouTube app** button and a **Continue on YouTube website** link, and a way to stop the automatic redirect.
+
+The destination is stored in the part of the link after the `#`. Browsers do not send that part to the website's server, so the page can read it but it does not appear in server logs.
+
+## What no tool can promise
+
+**Instagram, TikTok, Facebook and Threads can block these attempts.** Those apps decide how links open, and some do not allow other pages to launch apps or leave their browser. The page shows tips for those cases, such as using the browser's menu to open in Safari or Chrome.
+
+**It depends on versions.** Channel and playlist routing can vary between YouTube app versions and phone models. A link that works today can behave differently after an update.
+
+**It does not grow your channel.** The link only makes opening the app easier. It does not add subscribers or views, and the tool does not claim to.
+
+## Why the link needs a test
+
+Because there are many combinations of phone, app and in-app browser, the only way to know is to try it. The toolkit's own tests use device emulation in Chrome to check that launch attempts and fallbacks work. That is not the same as testing the handoff on every real phone. So test yours.
+
+## Handle or channel ID in the link
+
+YouTube's [handle help page](https://support.google.com/youtube/answer/11585688) says a handle starts with @ and is unique to a channel. Its [channel URL page](https://support.google.com/youtube/answer/6180214) says the ID-based URL is the one that uses the channel's unique ID. The tool accepts both. If you change your handle later, a link made from the handle may stop pointing where you want, so for something you will print, such as on a poster, a channel ID link is the safer choice.
+
+## FAQ
+
+### Why do YouTube links open in a browser inside Instagram or TikTok?
+Because those apps open links in their own built-in browser by default. That is their choice, not YouTube's.
+
+### Can any link force the YouTube app to open?
+No. A link can try, and give the viewer a button or a fallback, but the host app has the final say.
+
+### Does the App Link Maker cost anything?
+No. It is free, needs no account and does not need an API key.
+
+### Does it work for Shorts and playlists?
+It supports Shorts, playlists, videos, @handles and channel IDs. Behavior can differ by YouTube app version, so test.
+
+### Is the QR code stored anywhere?
+No. It is made in your browser, and you can download it from there.
+
+## Sources
+
+- https://developer.chrome.com/docs/android/intents
+- https://support.google.com/youtube/answer/6180214
+- https://support.google.com/youtube/answer/11585688
+
+---
+From Creator Toolkit: https://devanasolver.github.io/youtube-creator-toolkit/
+
+====
+
+# How to Use Creative Commons and Free Footage in YouTube Videos Without Trouble
+
+Source: https://devanasolver.github.io/youtube-creator-toolkit/blog/use-creative-commons-youtube-footage-legally/
+Published: 2026-10-15 | Updated: 2026-10-18 | Site: Creator Toolkit (free YouTube creator tools)
+Related free tool: Free and CC Footage Finder - https://devanasolver.github.io/youtube-creator-toolkit/#footage
+
+**TL;DR:** On YouTube, Creative Commons means the CC BY license: you can reuse the video if you give credit, but you must still check the uploader had the rights. The Free and CC Footage Finder opens ready-made searches on YouTube's CC filter and other free libraries and writes a credit line for you. Always open the clip and read its own license first.
+
+Using someone else's footage can save hours, but it can also cost you a copyright claim, a strike or a lost video. This page covers the rules YouTube explains in its help pages. It is general information, not legal advice.
+
+## What Creative Commons means on YouTube
+
+YouTube's [license types page](https://support.google.com/youtube/answer/2797468) says uploaders can choose between the standard YouTube license and a Creative Commons Attribution license (CC BY). If the uploader applies CC BY, other creators can reuse the video, subject to the terms of that license. Using work under CC BY means you must give the creator credit.
+
+Two important details from the same page:
+
+- A video can only get the CC BY label if all of its content can be licensed that way. That includes the uploader's own original work, content released under CC BY and public domain content.
+- If a video has a Content ID claim, the uploader cannot mark it CC BY.
+
+YouTube also says it cannot grant you the rights to content that is already on YouTube, and it cannot help you find the people who can. That research is yours to do.
+
+## How to find and credit Creative Commons footage
+
+1. Type what you need into the [Free and CC Footage Finder](https://devanasolver.github.io/youtube-creator-toolkit/#footage).
+2. Open the first card. It searches YouTube with the Creative Commons filter on.
+3. Open a clip you like. Scroll to the description and check that it really says Creative Commons Attribution.
+4. Check the video itself for things that are not the uploader's, such as popular music, a film clip or a brand logo. The CC label does not clear those.
+5. Fill in the attribution helper with the title, the author, the source link and the license. Copy the credit line.
+6. Put the credit in your video, as a text overlay or a spoken line, and in your video description.
+
+YouTube's page lists what a credit should include: the title of the work, the author, the source (a URL) and the license, such as "is licensed under CC BY."
+
+## Other places the tool searches
+
+The finder also opens searches on Pexels, Pixabay, Wikimedia Commons, the Internet Archive and Mixkit. Each has its own license, and these are not all the same:
+
+- Some need no credit, some ask for it.
+- Some limit certain uses, such as selling the clip alone or using people's likenesses.
+- Public domain material can still include parts that are not in the public domain, like a music track.
+
+Read the license on the clip's page every time. The tool can send you to the right place, but it cannot check a license for you.
+
+## Can I monetize a video with CC footage?
+
+YouTube's page says you can monetize content under a Creative Commons license if the license gives you the right to use it commercially. Some owners also ask for credit or proof of purchase for commercial use. Read the terms.
+
+## What about fair use?
+
+Fair use is a legal defense, not a permission. YouTube's [fair use page](https://support.google.com/youtube/answer/9783148) says courts decide each case on its facts, and lists four factors: the purpose of the use, the nature of the work, how much is used, and the effect on the market. It also says that giving credit does not by itself make something fair use, and that phrases like "no infringement intended" give no automatic protection. If you rely on fair use, get legal advice.
+
+## What the tool does not do
+
+- It does not verify licenses or tell you a clip is safe.
+- It does not download videos. This toolkit has no video or audio downloader.
+- It cannot see whether a CC clip contains someone else's music or footage.
+- Search results are only as good as the source sites.
+
+## FAQ
+
+### Can I use any YouTube video if I give credit?
+No. Credit alone is not permission. You can reuse a video if it is under a Creative Commons Attribution license and you follow its terms, or if you have permission from the owner.
+
+### What does CC BY mean?
+It means you may reuse the work if you give the creator credit. On YouTube, "Creative Commons" refers to this CC BY license.
+
+### How do I credit a Creative Commons video?
+Include the title, the author, a link to the source and the license, for example: "Clip title" by Author (link) - licensed under CC BY. The tool writes this for you.
+
+### Does Creative Commons footage mean I can't be claimed?
+No. A claim can still happen if the clip includes someone else's material, such as music. Check the clip and be ready to dispute a wrong claim.
+
+### Is it free to use Pexels and Pixabay clips?
+They are free to use under their own licenses, which are not the same as Creative Commons. Read the license on each site.
+
+## Sources
+
+- https://support.google.com/youtube/answer/2797468
+- https://support.google.com/youtube/answer/9783148
+- https://support.google.com/youtube/answer/2797466
+
+---
+From Creator Toolkit: https://devanasolver.github.io/youtube-creator-toolkit/
+
+====
+
+# What Is the Best Time to Post on YouTube? Find Yours in Five Minutes
+
+Source: https://devanasolver.github.io/youtube-creator-toolkit/blog/best-time-to-post-on-youtube/
+Published: 2026-10-14 | Updated: 2026-10-18 | Site: Creator Toolkit (free YouTube creator tools)
+Related free tool: Upload Time Planner - https://devanasolver.github.io/youtube-creator-toolkit/#planner
+
+**TL;DR:** There is no best time to post that works for everyone. Open YouTube Studio, go to Analytics, then Audience, and read "When your viewers are on YouTube". Then enter your audience's time zone and their busiest hour into the Upload Time Planner. It gives you the exact local time to publish, a set number of hours before that peak.
+
+Every "best time to post" chart you see online is an average of other people's channels. Your audience may live in a different country, work different hours and watch at different times. The only useful number is your own.
+
+## How to pick a publish time for YouTube videos
+
+1. Open YouTube Studio and select **Analytics**.
+2. Open the **Audience** tab and find **When your viewers are on YouTube**.
+3. Note the day and hour when the bars are highest, and the time zone your audience is mostly in. Studio shows this for the last 28 days.
+4. Open the [Upload Time Planner](https://devanasolver.github.io/youtube-creator-toolkit/#planner), choose that time zone, and enter the busiest hour in their local time.
+5. Set how many hours earlier you want to publish. Two to three is a common starting point.
+6. Read the table. It lists the next seven days with the time to publish in your own time zone and the time your audience sees it.
+
+## What YouTube says
+
+YouTube's [audience analytics help page](https://support.google.com/youtube/answer/9314416) describes the report like this: it shows when your viewers are online across YouTube in the last 28 days, and you can use it to help build your community, schedule a Premiere or plan a live stream. It does not say that publishing at the peak hour boosts a video, so use it as a guide for when people are around, not as a ranking trick.
+
+## Why publish a little before the peak
+
+A new video needs a bit of time to process and for your subscribers to be notified. Publishing an hour or two before your audience is most active means the video is ready and visible when they arrive. That reasoning is common creator practice, not an official YouTube rule, so test it and see.
+
+## Time zones are where people go wrong
+
+If your audience is in Manila and you are in Berlin, a 7 pm peak for them is a different clock time for you, and the gap changes when daylight saving time starts or ends in one place but not the other. The planner converts between the zones for each specific day, so you see the real clock time instead of doing the sum in your head.
+
+## How to test it
+
+- Change one thing at a time. Keep the same publish time for four to six videos, then compare how the first day goes.
+- Compare videos of a similar kind. A tutorial and a vlog do not behave the same.
+- Look at the first 24 to 48 hours of views, not just the final total.
+- Remember a great video at a bad time often beats a weak video at a perfect time.
+
+## What the planner does not do
+
+- It does not look up your analytics. You enter the peak yourself.
+- It does not predict views or tell you that a time will perform better.
+- It does not schedule the upload. Use YouTube Studio's schedule option for that.
+- Audience patterns shift. Recheck every few months.
+
+## FAQ
+
+### What is the best time to post on YouTube?
+It depends on your audience. Check "When your viewers are on YouTube" in Studio Analytics, Audience tab, and publish a little before the busiest time.
+
+### Does posting at a certain time help the algorithm?
+YouTube does not say it does. The time helps your audience see the video when they are online. Treat it as a minor factor.
+
+### How early should I publish before the peak?
+Two to three hours is a common starting point. Test it on your own channel.
+
+### What if my viewers are in several countries?
+Pick the biggest group first, or choose a time that is reasonable for two of them. Check the report again after a few videos.
+
+### Where do I find the report?
+In YouTube Studio, open Analytics, then the Audience tab, and look for "When your viewers are on YouTube".
+
+## Sources
+
+- https://support.google.com/youtube/answer/9314416
+
+---
+From Creator Toolkit: https://devanasolver.github.io/youtube-creator-toolkit/
+
+====
+
+# How to Add Chapters to a YouTube Video (Rules, Format and Common Errors)
+
+Source: https://devanasolver.github.io/youtube-creator-toolkit/blog/how-to-add-youtube-chapters/
+Published: 2026-10-13 | Updated: 2026-10-18 | Site: Creator Toolkit (free YouTube creator tools)
+Related free tool: Chapters Checker and Formatter - https://devanasolver.github.io/youtube-creator-toolkit/#chapters
+
+**TL;DR:** To add chapters, put a list of timestamps and titles in the video description. The first must be 00:00, you need at least three in ascending order, and each chapter must be at least 10 seconds long. The Chapters Checker and Formatter tests your list against those rules and gives you a clean block to paste.
+
+Chapters split a video into labeled sections. Viewers can see what is in the video and jump straight to the part they want. YouTube's [chapters help page](https://support.google.com/youtube/answer/9884579) describes two ways to get them: write your own, or let YouTube generate them automatically.
+
+## How to add chapters to a YouTube video
+
+1. Sign in to YouTube Studio and select **Content**.
+2. Click the video you want to edit.
+3. In the **Description**, add a list of timestamps with titles. The first timestamp must be `00:00`.
+4. Include at least three timestamps, in ascending order. Each chapter must be at least 10 seconds long.
+5. Click **Save**.
+
+YouTube notes that adding your own chapters overrides automatic chapters.
+
+## What the list looks like
+
+```
+0:00 Intro
+1:24 Setting up
+5:10 The main edit
+9:42 Export settings
+```
+
+Each line is a time and a short title. Put the list on its own lines, not inside a paragraph. The checker accepts common styles, such as a dash between the time and the title, or an hour in the time like `1:02:15`, and rewrites them into one clean format.
+
+## The rules, one by one
+
+| Rule | What YouTube says |
+| --- | --- |
+| First timestamp | Must be 00:00 |
+| Number of chapters | At least three timestamps listed |
+| Order | Ascending |
+| Minimum length | 10 seconds per chapter |
+
+The [Chapters Checker and Formatter](https://devanasolver.github.io/youtube-creator-toolkit/#chapters) tests all four. It tells you what breaks a rule, for example "Chapters shorter than 10 seconds at: 2:05", sorts the lines by time and gives you a clean block to copy. It does not know how long your video is, so it cannot check the length of the very last chapter. Check that one yourself.
+
+## Why your chapters might not show
+
+- **Fewer than three timestamps**, or the first is not 00:00.
+- **A chapter is too short.** Under 10 seconds does not work.
+- **Timestamps are out of order.**
+- **Advanced features.** YouTube's page says if you do not have access to chapters yet, apply for access to advanced features.
+- **Strikes or sensitive content.** YouTube says automatic chapters are not available if the channel has any active strikes, or the content may be inappropriate to some viewers.
+- **The video is brand new.** Chapters may take a short time to appear after you save.
+
+## Automatic chapters
+
+By default, YouTube's page says the Allow automatic chapters box is ticked for new uploads. Not all videos are eligible and not all eligible videos get them. You can opt out per video, in bulk, or in your upload defaults. If you want control over the wording, write your own.
+
+## Writing good chapter titles
+
+- Use the words a viewer would scan for: "Export settings", not "The last bit".
+- Keep each title short. A few words is enough.
+- Put the useful chapters in order of the video, and do not leave out the intro.
+- Do not stuff keywords. Chapters are for people first.
+
+## Chapters and transcripts
+
+YouTube says chapters may appear in transcripts. So well-named chapters also make a [transcript](https://devanasolver.github.io/youtube-creator-toolkit/blog/how-to-get-a-youtube-transcript/) easier to scan.
+
+## FAQ
+
+### How do I add timestamps to a YouTube video description?
+Add lines like `0:00 Intro` to the description in YouTube Studio. The first timestamp must be 00:00 and you need at least three.
+
+### How long must a YouTube chapter be?
+At least 10 seconds.
+
+### Why are my YouTube chapters not showing?
+Common causes are fewer than three timestamps, a first timestamp that is not 00:00, a chapter shorter than 10 seconds, or missing advanced features access.
+
+### Do YouTube chapters help SEO?
+YouTube says chapters give each section its own preview and make the video easier to navigate. It does not publish a ranking effect, so treat them as a viewer feature first.
+
+### Can I turn off automatic chapters?
+Yes, for one video, in bulk, or in your upload defaults, from YouTube Studio.
+
+## Sources
+
+- https://support.google.com/youtube/answer/9884579
+- https://support.google.com/youtube/answer/57404
+
+---
+From Creator Toolkit: https://devanasolver.github.io/youtube-creator-toolkit/
+
+====
+
+# How Much Do YouTube Creators Earn? RPM and CPM Explained
+
+Source: https://devanasolver.github.io/youtube-creator-toolkit/blog/how-much-do-youtube-creators-earn-rpm-explained/
+Published: 2026-10-12 | Updated: 2026-10-18 | Site: Creator Toolkit (free YouTube creator tools)
+Related free tool: Revenue Estimator - https://devanasolver.github.io/youtube-creator-toolkit/#revenue
+
+**TL;DR:** RPM is what a creator earns per 1,000 views after YouTube's share, counting all views. CPM is what advertisers pay per 1,000 ad impressions before YouTube's share, so RPM is lower. The Revenue Estimator multiplies your monthly views by an RPM range you choose. It shows scenarios only. Get your real RPM from YouTube Studio, and remember only Partner Program creators earn ad revenue.
+
+There is no honest single number for "how much does YouTube pay per view". It depends on the audience, the topic, the country, the time of year, how many viewers see ads, and more. What you can do is understand the terms, use your own numbers, and make a range.
+
+## RPM and CPM in plain words
+
+YouTube's [ad revenue analytics help page](https://support.google.com/youtube/answer/9314357) defines them like this:
+
+- **RPM (revenue per mille)** is how much you earned per 1,000 video views. It is calculated after YouTube's revenue share. It includes all views, including ones that were not monetized. It covers ad revenue, channel memberships, YouTube Premium revenue, Super Chat and Super Stickers.
+- **CPM** is the cost per 1,000 ad impressions, before YouTube's revenue share. It only counts views that had ads shown and only revenue from ads and YouTube Premium. It is the advertiser's number.
+
+That is why YouTube says RPM is lower than CPM. When someone says "my CPM is $10", your RPM would be lower. RPM is the number that matters for your own planning.
+
+YouTube also notes RPM does not include sponsorships and brand deals (other than YouTube BrandConnect), merch sales, or services you sell because of your channel.
+
+## How to estimate YouTube revenue from views and RPM
+
+1. Open YouTube Studio, then Analytics, then the Revenue tab. Find your RPM for the last 28 days and for a longer period. If you are not in the Partner Program yet, you will not have one.
+2. In the [Revenue Estimator](https://devanasolver.github.io/youtube-creator-toolkit/#revenue), enter your monthly long-form views.
+3. Enter a low RPM and a high RPM. Use a range from your own history, not a number from a video.
+4. Optionally enter Shorts views and a Shorts RPM. Shorts are usually paid differently from long-form, so keep them separate.
+5. Read the result: a monthly range, a yearly range at that pace, a midpoint, and a blended figure per 1,000 views.
+
+The tool is simple multiplication: views divided by 1,000, times RPM. The defaults in the boxes are placeholders so the page is not empty. They are not typical RPMs, so replace them.
+
+## Why RPM changes
+
+YouTube's help page says RPM is a snapshot of how fast you are earning. It can rise or fall without anything being wrong. For example, RPM can fall if more of your views are not monetized, even when your revenue is the same. It can rise if viewers join memberships. Seasonality also matters: advertiser spending is usually higher at some times of year than others, so one month tells you little.
+
+Things that usually push RPM around, and which the tool cannot see:
+
+- Where your viewers live.
+- Your topic, since some audiences are worth more to advertisers.
+- Video length and ad placements.
+- How many of your views come from Shorts, which are paid differently.
+- Whether you use memberships, Super Chat and the other income streams.
+
+## You must be in the Partner Program first
+
+Only creators in the YouTube Partner Program earn from ads. See [the requirements guide](https://devanasolver.github.io/youtube-creator-toolkit/blog/youtube-partner-program-requirements-explained/) for the thresholds. Until then, the estimator is only a "what if".
+
+## What this tool will not do
+
+- It will not tell you what another channel earns. Public data has no revenue figures, so any exact "earnings" number shown for someone else's channel is a guess.
+- It does not promise an outcome. It multiplies two numbers you enter.
+- It does not include taxes, which depend on where you live.
+- It does not include sponsorships, affiliate sales or merchandise.
+
+## FAQ
+
+### How much does YouTube pay per 1,000 views?
+It varies a lot. That figure is your RPM, and you can read yours in YouTube Studio under Analytics, Revenue. A range from your own history is more useful than any average.
+
+### What is the difference between RPM and CPM?
+CPM is what advertisers pay per 1,000 ad impressions before YouTube's share. RPM is what you earn per 1,000 views after the share, including unmonetized views. RPM is lower.
+
+### Does the estimator use real data from my channel?
+No. It only uses the numbers you type in.
+
+### Do Shorts earn the same as long videos?
+Not usually. The tool has a separate Shorts RPM box so you can model them separately. Use real figures from your own analytics.
+
+### Can I see how much a competitor makes?
+No. Revenue is private to the channel owner and Google.
+
+## Sources
+
+- https://support.google.com/youtube/answer/9314357
+- https://support.google.com/youtube/answer/72851
+- https://support.google.com/youtube/answer/9314488
+
+---
+From Creator Toolkit: https://devanasolver.github.io/youtube-creator-toolkit/
+
+====
+
+# How to Compare Two YouTube Thumbnails Before You Publish
+
+Source: https://devanasolver.github.io/youtube-creator-toolkit/blog/compare-youtube-thumbnails-before-you-publish/
+Published: 2026-10-11 | Updated: 2026-10-18 | Site: Creator Toolkit (free YouTube creator tools)
+Related free tool: Thumbnail Preview and A/B Compare - https://devanasolver.github.io/youtube-creator-toolkit/#abtest
+
+**TL;DR:** The Thumbnail Preview and A/B Compare tool puts two thumbnail and title options side by side in a mock YouTube feed, in dark or light mode, so you can judge readability at small size. It is a visual check only. To measure what real viewers prefer, use YouTube's Test and Compare in Studio, which picks a winner by watch time.
+
+A thumbnail that looks great in your editor can fall apart when it is shown at the size of a stamp, next to other videos. The [Thumbnail Preview and A/B Compare tool](https://devanasolver.github.io/youtube-creator-toolkit/#abtest) helps you catch that before you publish. It also helps to know what it cannot do, and where to go for a real test.
+
+## How to compare two YouTube thumbnails with the preview tool
+
+1. Upload thumbnail A and thumbnail B. They stay in your browser.
+2. Type a title for each, and set your channel name.
+3. Switch between **Dark feed** and **Light feed**, because many viewers use one or the other.
+4. Look at both on a phone-sized screen, and at arm's length on a desktop. Can you read the words? Is the face or object clear?
+5. Pick the one that is clearer and truer to the video, or go back and redesign.
+
+## What to look for
+
+- **Readable text.** Three to five big words at most. If you squint and cannot read it, shorten it.
+- **One focal point.** The eye should go to one place first.
+- **Contrast against both feeds.** A dark thumbnail with a dark border can vanish on the dark feed. A pale one can vanish on the light feed.
+- **A title and thumbnail that work together.** The thumbnail should add something to the title, not repeat it word for word.
+- **An honest promise.** YouTube's [click-through rate FAQ](https://support.google.com/youtube/answer/7628154) says clickbait videos tend to have low average view duration, so they are less likely to be recommended.
+
+## What this tool is not
+
+It is a mock-up. It does not use YouTube's data, and it cannot tell you which thumbnail gets more clicks. A nicer-looking preview does not mean a better click-through rate. The tool helps you avoid obvious problems, such as unreadable text or a thumbnail that disappears in dark mode.
+
+## YouTube's own Test and Compare
+
+For real data, YouTube has a feature called A/B testing in Studio. Here is what [YouTube's help page](https://support.google.com/youtube/answer/13861714) says today:
+
+- You can test up to 3 titles and thumbnails, as title only, thumbnail only, or both.
+- At the end, the option with the highest **watch time** share is shown to all viewers. If there is no clear winner, the first option you uploaded is used.
+- It is currently available on computers, through YouTube Studio, and needs advanced features enabled.
+- You cannot test Shorts, scheduled lives or premieres (a premiere becomes eligible once it ends and converts to a regular video). Kids content, mature audiences content and private videos are not eligible.
+- A test can take a few days to 2 weeks. If a title or thumbnail is changed during the test, the test stops.
+- YouTube recommends testing older videos first and making the options clearly different from each other, because options that are too similar take longer to produce a result.
+- If any test thumbnail is below 720p (1280 x 720), all of the test thumbnails are downscaled to 480p (854 x 480), so upload high-resolution images.
+
+Notice that YouTube picks by watch time, not by clicks. A thumbnail that gets clicks and short views is not necessarily the winner.
+
+## Use both, in order
+
+1. Use the preview tool while you design, to avoid readability problems.
+2. Publish the best option.
+3. If you want proof, run a Test and Compare in Studio on an eligible video and let it finish.
+
+YouTube's click-through rate FAQ also warns against testing several thumbnails or titles on the same video by hand, because differences may come from traffic sources rather than the change itself. That is one reason the built-in test is a better choice than swapping thumbnails yourself.
+
+## FAQ
+
+### Can I A/B test thumbnails on YouTube?
+Yes, in YouTube Studio on a computer, if your channel has advanced features and the video is eligible. You can test up to three titles and thumbnails.
+
+### Does this tool tell me which thumbnail will get more clicks?
+No. It shows how each one looks in a mock feed. Only real viewers can tell you which gets more clicks.
+
+### How long does a YouTube thumbnail test take?
+YouTube says it can take a few days up to 2 weeks.
+
+### What is the winner based on?
+YouTube says it is the option with the highest watch time share, not the highest click rate.
+
+### Are my images uploaded to a server?
+No. They are processed in your browser.
+
+## Sources
+
+- https://support.google.com/youtube/answer/13861714
+- https://support.google.com/youtube/answer/7628154
+- https://support.google.com/youtube/answer/72431
+
+---
+From Creator Toolkit: https://devanasolver.github.io/youtube-creator-toolkit/
+
+====
+
+# A YouTube Title and Description Checklist (With the Limits That Matter)
+
+Source: https://devanasolver.github.io/youtube-creator-toolkit/blog/youtube-title-and-description-checklist/
+Published: 2026-10-10 | Updated: 2026-10-18 | Site: Creator Toolkit (free YouTube creator tools)
+Related free tool: Title and Description Analyzer - https://devanasolver.github.io/youtube-creator-toolkit/#analyzer
+
+**TL;DR:** Before you publish, check that the title is under 100 characters (aim around 30 to 60), leads with the topic, and matches the video. Write a description of at least a few sentences with the main phrase in the first lines. The Title and Description Analyzer runs these checks and gives a score, but it is a checklist, not a prediction of ranking.
+
+Publishing a video with a vague title and an empty description is the easiest mistake to fix. The [Title and Description Analyzer](https://devanasolver.github.io/youtube-creator-toolkit/#analyzer) runs a short checklist on what you paste in. This guide explains each check and the reason for it, so you can decide for yourself when to ignore it.
+
+## How to check a YouTube title and description before publishing
+
+1. Paste your title and description. Add the main phrase you want the video to be found for.
+2. Optionally paste your tags, separated by commas.
+3. Read the checklist. Green is fine, amber is worth a look, red is likely a real problem.
+4. Fix the items that actually help a viewer. Skip any item that would make the text worse.
+5. Re-read the title and the first two lines of the description aloud. If it sounds like a person, you are done.
+
+## The checks and why they exist
+
+### Title length
+
+YouTube's [video settings page](https://support.google.com/youtube/answer/57404) says titles have a limit of 100 characters. The analyzer prefers 30 to 60. That range is a habit, not a YouTube rule. Long titles can get cut off on phones and in some search results, so the first words should carry the point.
+
+### Keyword in the title, and early
+
+If you entered a target phrase, the tool checks whether it appears in the title and how early. YouTube says relevance includes how well the title, tags, description and video content match what someone searched. Leading with the topic is a simple way to match.
+
+### Keyword in the first lines of the description
+
+The first lines are what viewers see before they expand the description. The tool checks the first 150 characters. This is a practical guide, not a YouTube number.
+
+### Capital letters and punctuation
+
+All-caps titles read like shouting, and several exclamation marks make a video look spammy. The tool flags a title that is mostly capitals or uses more than two ! or ? marks. This is style advice.
+
+### A number in the title
+
+Numbers can make a promise concrete, like "5 mistakes". It is only a hint, and the tool gives it a small weight. Skip it if it does not fit.
+
+### Description length
+
+YouTube allows up to 5,000 characters. The tool wants at least a few sentences, 250 characters or more, so the description says what the video covers. A longer description is not better by itself.
+
+### Hashtags
+
+Per YouTube's [hashtag help page](https://support.google.com/youtube/answer/6390658), up to three hashtags appear above your title, and a video with more than 60 hashtags has all of them ignored. The analyzer flags anything beyond that limit and prefers 1 to 5.
+
+### Chapter timestamps
+
+If your description has at least three timestamps, YouTube may show chapters. YouTube's [chapters help](https://support.google.com/youtube/answer/9884579) says the first timestamp must be 00:00, you need at least three in ascending order, and each chapter needs to be at least 10 seconds. Use the [Chapters tool](https://devanasolver.github.io/youtube-creator-toolkit/blog/how-to-add-youtube-chapters/) to format them.
+
+### A link in the description
+
+A link to your channel, a playlist or the next video gives viewers somewhere to go next. YouTube's API documentation notes that links in descriptions are only clickable for channels that meet platform requirements, such as verification or advanced features, so check yours.
+
+### Tags
+
+The tool counts tag characters against 500, the limit YouTube's API documents. Tags carry little weight, so do not pad them.
+
+## What the score means
+
+The score is the share of checks you pass, weighted. It is a quick way to catch missing basics. It is not a ranking prediction. Nobody outside YouTube can score what the recommendation system will do, and the tool does not claim to.
+
+If you are at 60 and the title is clear and honest, do not twist it to reach 90.
+
+## FAQ
+
+### What is the maximum length of a YouTube title?
+100 characters. Shorter titles are often easier to read on phones.
+
+### How long can a YouTube description be?
+Up to 5,000 characters according to YouTube's video settings page.
+
+### Where should the keyword go in a description?
+In the first one or two lines, in a normal sentence, because that is what viewers see before expanding it.
+
+### Does a high analyzer score improve my ranking?
+No. It checks good habits. Ranking depends on many things, including how viewers respond to the video.
+
+### Do I need tags?
+They are optional. YouTube says they play a minimal role, but may help with common misspellings.
+
+## Sources
+
+- https://support.google.com/youtube/answer/57404
+- https://developers.google.com/youtube/v3/docs/videos
+- https://support.google.com/youtube/answer/6390658
+- https://support.google.com/youtube/answer/9884579
+- https://support.google.com/youtube/answer/16090438
+
+---
+From Creator Toolkit: https://devanasolver.github.io/youtube-creator-toolkit/
+
+====
+
+# YouTube Keyword Research With Autocomplete (and How to Pick Hashtags)
+
+Source: https://devanasolver.github.io/youtube-creator-toolkit/blog/youtube-keyword-research-with-autocomplete/
+Published: 2026-10-09 | Updated: 2026-10-18 | Site: Creator Toolkit (free YouTube creator tools)
+Related free tool: Keyword and Tag Suggestions tool - https://devanasolver.github.io/youtube-creator-toolkit/#keywords
+
+**TL;DR:** YouTube's search box suggests phrases that people have searched for. The Keyword and Tag Suggestions tool collects those suggestions for your topic and builds a hashtag list. It shows real searches, but not how many people search or how hard it is to rank. Use 3 to 5 relevant hashtags - YouTube shows up to three above the title.
+
+You do not need a paid tool to find out what people type into YouTube. The search box already suggests phrases as you type. The [Keyword and Tag Suggestions tool](https://devanasolver.github.io/youtube-creator-toolkit/#keywords) collects them for you in one list.
+
+## Where the suggestions come from
+
+YouTube's [search predictions help page](https://support.google.com/youtube/answer/9872296) says predictions come from what other people are searching for (including trending searches), the searches and watch history of a signed-in user who has activity turned on, and the words you have typed. YouTube adds that predictions are not answers and not statements by YouTube.
+
+The tool asks for these suggestions without your account, so you see the general suggestions rather than ones shaped by your own history.
+
+## How to do keyword research with YouTube search suggestions
+
+1. Enter a broad topic, such as "video editing".
+2. Read the list. Look for phrases that show a real need, such as "video editing for beginners on phone".
+3. Pick the phrase that matches your video most closely. Do not stretch it to fit.
+4. Put it in your title, in the first lines of your description, and say it in the first part of the video.
+5. Check the real search results on YouTube. If the top results are all huge channels, make your angle more specific.
+
+## What suggestions can and cannot tell you
+
+They **can** tell you that people actually search for a phrase, and how they word it.
+
+They **cannot** tell you how many people search for it, how many videos compete for it, or whether you could rank. The tool does not show search volume or competition, and it does not make any up.
+
+YouTube's [search help page](https://support.google.com/youtube/answer/16090438) says its ranking looks at relevance, engagement and quality. Relevance includes how well the title, tags, description and video content match the search. Engagement includes things like the watch time of a video for a particular query. A keyword gets you into the conversation. The video still has to keep people watching.
+
+## Hashtags: the rules that matter
+
+The tool also builds a hashtag list. From YouTube's [hashtag help page](https://support.google.com/youtube/answer/6390658):
+
+- Hashtags cannot contain spaces. Join words together, like `#VideoEditing`.
+- Out of all the hashtags you add to the description, up to three of the most engaging ones appear by your video title.
+- Do not over-tag. If a video has more than 60 hashtags, YouTube says it will ignore every hashtag on it, and over-tagging can lead to removal from search or uploads.
+- Do not use hashtags that are unrelated to the video. That falls under misleading metadata.
+
+For almost every video, three to five relevant hashtags is plenty. More does not help.
+
+## What about the tags field?
+
+The tool can also build a comma-separated tag list that stops before 500 characters, which is the limit YouTube's API documents for tags. But YouTube's [video settings page](https://support.google.com/youtube/answer/57404) says tags can help if your topic is commonly misspelled and otherwise "play a minimal role." Your title, thumbnail and description matter more. See the [tags guide](https://devanasolver.github.io/youtube-creator-toolkit/blog/youtube-tags-extractor-do-tags-matter/).
+
+## Limits of the tool
+
+- Suggestions can change by country, language and time of day.
+- Sometimes the lookup fails because the upstream service is not responding. Try again after a moment.
+- A suggested phrase is a starting point. Always write for the viewer, not for the list.
+
+## FAQ
+
+### How do I find keywords for YouTube videos?
+Type your topic into YouTube's search box and read the suggestions, or paste the topic into the Keyword and Tag Suggestions tool to get them all at once. Pick the phrase that fits your video honestly.
+
+### Does the tool show search volume?
+No. YouTube does not publish search volume in autocomplete, and the tool does not estimate it.
+
+### How many hashtags should I use on YouTube?
+Three to five relevant ones is a practical number. YouTube shows up to three above your title and says it ignores all hashtags if a video has more than 60.
+
+### Do YouTube tags still matter?
+A little. YouTube says tags can help with commonly misspelled words and otherwise play a minimal role in discovery.
+
+### Why are suggestions different for me and someone else?
+Signed-in suggestions can use your own search and watch history. The tool shows the general suggestions.
+
+## Sources
+
+- https://support.google.com/youtube/answer/9872296
+- https://support.google.com/youtube/answer/16090438
+- https://support.google.com/youtube/answer/6390658
+- https://support.google.com/youtube/answer/57404
+
+---
+From Creator Toolkit: https://devanasolver.github.io/youtube-creator-toolkit/
+
+====
+
+# YouTube Channel Stats Lookup - What Public Data Can and Cannot Tell You
+
+Source: https://devanasolver.github.io/youtube-creator-toolkit/blog/youtube-channel-stats-lookup-what-public-data-shows/
+Published: 2026-10-08 | Updated: 2026-10-18 | Site: Creator Toolkit (free YouTube creator tools)
+Related free tool: Channel Stats Lookup - https://devanasolver.github.io/youtube-creator-toolkit/#channel
+
+**TL;DR:** The Channel Stats Lookup takes an @handle, channel link or channel ID and shows the public subscriber count and the views, likes and dates of the 15 most recent uploads. It cannot show earnings, total views, watch time or retention. Those belong to the channel owner in YouTube Studio. Subscriber counts are rounded by YouTube.
+
+Sometimes you want a quick read on a channel: yours, a competitor's, or someone you might work with. The [Channel Stats Lookup](https://devanasolver.github.io/youtube-creator-toolkit/#channel) shows what is public and says clearly when something is missing.
+
+## How to look up a YouTube channel's public stats
+
+1. Copy the channel's @handle, its link, or its channel ID.
+2. Paste it into the [Channel Stats Lookup](https://devanasolver.github.io/youtube-creator-toolkit/#channel) and press **Look up**.
+3. Read the subscriber count and the table of recent uploads: title, date posted, views and likes.
+4. Use the link on each row to open the video on YouTube.
+
+## Handle, URL or ID: which one do I use?
+
+YouTube's [channel URL help page](https://support.google.com/youtube/answer/6180214) explains that a channel can have several addresses that all lead to the same place:
+
+- **Handle URL**, like `youtube.com/@youtubecreators`. Created when a channel owner picks a handle.
+- **ID-based URL**, like `youtube.com/channel/UC...`. This uses the channel's unique ID and never changes.
+- **Custom URL** (`/c/...`) and **legacy username URL** (`/user/...`). YouTube says new custom URLs can no longer be set up, but existing ones still work.
+
+The lookup accepts any of these. Handles are the easiest to type. The channel ID is the most stable, so use it when you want to save a reference for later.
+
+## What the lookup shows
+
+- The channel name, with a link to the channel.
+- The public subscriber count, when YouTube shows one.
+- A set of simple numbers worked out from the recent uploads.
+- A table of the most recent uploads with date, views and likes.
+
+## What it leaves out on purpose
+
+**It only sees the 15 most recent uploads.** The lookup uses YouTube's public feed for the channel, which lists a limited number of recent videos. So it cannot tell you the channel's best video of all time or its total number of videos.
+
+**Subscriber counts are rounded.** YouTube shortens public subscriber counts, so "1.2M" can be anywhere in a range. Some channels hide the number.
+
+**There is no earnings data.** Public pages do not show revenue. Any site that shows an exact "earnings" number for another channel is guessing. If you want a rough idea of what a channel with a given number of views could earn, use the [Revenue Estimator](https://devanasolver.github.io/youtube-creator-toolkit/#revenue) and read the [RPM guide](https://devanasolver.github.io/youtube-creator-toolkit/blog/how-much-do-youtube-creators-earn-rpm-explained/), but treat the output as a scenario.
+
+**There is no watch time, retention or traffic source data.** Only the owner can see that in YouTube Studio.
+
+## Reading the numbers without fooling yourself
+
+- **Compare like with like.** A video from yesterday has had less time to collect views than a video from last month.
+- **Look at the spread.** If one video has ten times the views of the others, the channel's usual level is closer to the lower ones.
+- **Views are not constant.** YouTube's [engagement metrics page](https://support.google.com/youtube/answer/2991785) says it can slow down, freeze or change counts while it checks they are legitimate. It also says that from August 24, 2026, views are counted the moment a video starts to play across all formats. So compare numbers over time carefully.
+- **Likes divided by views is not "engagement".** It is one ratio. A calm tutorial may get fewer likes than a comedy video and still do its job.
+
+## Good uses for the tool
+
+- Checking the posting rhythm of a channel in your niche.
+- Seeing which of a competitor's last 15 videos got the strongest response, then asking why.
+- Verifying that a channel you plan to work with is active and posts what it says.
+- Getting a channel's ID so you can build a [subscribe link](https://devanasolver.github.io/youtube-creator-toolkit/blog/youtube-subscribe-link/).
+
+## FAQ
+
+### Can I see any YouTube channel's stats?
+You can see public stats for any public channel: subscriber count (rounded) and recent video views and likes. Private analytics such as watch time and revenue are only visible to the owner.
+
+### How do I find a YouTube channel ID?
+Open the channel page. If the address contains `/channel/UC...`, that is the ID. For a handle, paste it into the lookup and it resolves the ID for you.
+
+### Why does the lookup only show 15 videos?
+That is what YouTube's public feed provides. The tool does not scrape or guess the rest.
+
+### Can it show how much a channel earns?
+No. Public data does not include earnings. Be careful with any tool that claims otherwise.
+
+### Why are the subscriber numbers rounded?
+YouTube rounds public subscriber counts. Only the owner sees the exact number in Studio.
+
+## Sources
+
+- https://support.google.com/youtube/answer/6180214
+- https://support.google.com/youtube/answer/11585688
+- https://support.google.com/youtube/answer/2991785
+
+---
+From Creator Toolkit: https://devanasolver.github.io/youtube-creator-toolkit/
+
+====
+
+# How to Clean and Convert SRT and VTT Caption Files
+
+Source: https://devanasolver.github.io/youtube-creator-toolkit/blog/clean-srt-vtt-caption-files/
+Published: 2026-10-07 | Updated: 2026-10-18 | Site: Creator Toolkit (free YouTube creator tools)
+Related free tool: SRT and VTT cleaner - https://devanasolver.github.io/youtube-creator-toolkit/#transcript
+
+**TL;DR:** Caption files often come with formatting tags, [music] cues, repeated lines and timing that is slightly off. The SRT and VTT cleaner in the Transcript section removes the noise, merges duplicates, shifts timing by a number of seconds and exports .txt, .srt or .vtt. It runs in your browser, so the file is never uploaded.
+
+Caption files are simple text, but real ones are messy. Auto-generated files repeat lines. Subtitle tools leave tags like `<i>` or `{\an8}` in the text. Sound cues such as [music] or (applause) get in the way when you want to read the words. And if you cut the start of a video, every timestamp is now off. The cleaner in the [Transcript section](https://devanasolver.github.io/youtube-creator-toolkit/#transcript) fixes these without any account or upload.
+
+## What the two formats look like
+
+An **SRT** file is numbered blocks, each with a time range and the text:
+
+`1`, then `00:00:01,000 --> 00:00:03,500`, then the line of text.
+
+A **VTT** file is similar but starts with the word WEBVTT, and uses a dot instead of a comma in the time: `00:00:01.000`. Both are plain text, so you can open them in any text editor.
+
+## How to clean a caption file
+
+1. Open the [cleaner](https://devanasolver.github.io/youtube-creator-toolkit/#transcript) and choose your file, or paste the text into the box. A .srt, .vtt or .txt file works.
+2. Choose what to remove:
+   - **Style tags** like `<i>` and `{\an8}`. On by default.
+   - **Bracketed cues** like [music] and (applause). Off by default, because sometimes you want them.
+   - **Repeated lines**. On by default. This merges lines that repeat across neighboring cues, which is common in auto-captions.
+3. Optionally set **Shift timing** in seconds. Use a positive number to move captions later and a negative number to move them earlier.
+4. Check the result in the output box.
+5. Copy the clean text, or download .txt, .srt or .vtt.
+
+## When to shift timing
+
+Say you trimmed 4 seconds from the start of your video after making the captions. Enter -4 and every cue moves 4 seconds earlier. If the captions appear too early, use a positive number. Decimal values work, so 0.5 moves things by half a second. Always play the video once to confirm the sync.
+
+## Which output should you pick?
+
+- **.txt** for reading, notes and writing.
+- **.srt** for most editors and many video platforms.
+- **.vtt** for web players.
+
+If you plan to upload captions to your own YouTube video, YouTube's [help page on adding subtitles and captions](https://support.google.com/youtube/answer/2734796) lists the file types it accepts and how to upload them. Check that page for the current list.
+
+## Fixing auto-captions properly
+
+Cleaning is not the same as correcting. The tool removes noise, it does not fix wrong words. YouTube says automatic captions can misrepresent the spoken content and recommends reviewing them. If you care about accuracy, read through the cleaned text once and fix names and terms.
+
+## Privacy and limits
+
+- The file is processed in your browser and never uploaded.
+- If no timed captions are found in what you pasted, the tool says so. It expects SRT or VTT style timing lines such as `00:00:01,000 --> 00:00:03,000`.
+- It does not translate captions or check them for accuracy.
+- Very large files may be slow on an old phone or computer.
+
+## FAQ
+
+### What is the difference between SRT and VTT?
+Both hold captions with timecodes. SRT is the older and simpler one. VTT is the web standard, begins with WEBVTT and uses dots in the timecodes.
+
+### How do I remove [music] from a caption file?
+Tick the option to remove bracketed cues. It removes text in square brackets and parentheses such as [music] and (applause).
+
+### How do I fix captions that are out of sync?
+Use the Shift timing box. A positive number delays all captions, a negative number moves them earlier.
+
+### Is my caption file uploaded anywhere?
+No. The cleaner runs in your browser.
+
+### Can it convert SRT to VTT?
+Yes. Load an SRT file and download the result as .vtt, or the other way around.
+
+## Sources
+
+- https://support.google.com/youtube/answer/6373554
+- https://support.google.com/youtube/answer/2734796
+
+---
+From Creator Toolkit: https://devanasolver.github.io/youtube-creator-toolkit/
+
+====
+
+# How to Get a YouTube Transcript (and Download It as TXT, SRT or VTT)
+
+Source: https://devanasolver.github.io/youtube-creator-toolkit/blog/how-to-get-a-youtube-transcript/
+Published: 2026-10-06 | Updated: 2026-10-18 | Site: Creator Toolkit (free YouTube creator tools)
+Related free tool: Transcript Download tool - https://devanasolver.github.io/youtube-creator-toolkit/#transcript
+
+**TL;DR:** Any YouTube video with captions has a transcript. You can read it under the video with Show transcript, or paste the link into the Transcript Download tool to copy it or save it as .txt, .srt or .vtt. If the video has no captions, there is nothing to fetch. Auto-generated captions contain mistakes, so read them before you quote them.
+
+A transcript is the text of what is said in a video, with the time of each line. It is useful for taking notes, quoting accurately, writing a blog post from your own video, checking what a competitor covered, and making a video easier to read for people who cannot or prefer not to listen.
+
+## Three ways to get a YouTube transcript
+
+### 1. Use YouTube's own transcript panel
+
+YouTube's [transcript help page](https://support.google.com/youtube/answer/15930243) says you can see the full transcript of any video that has captions. In the video description, click **Show transcript**. The text scrolls as you watch, and clicking a line jumps to that moment. This is the best choice when you only need to read along.
+
+### 2. Use the Transcript Download tool
+
+If you want the text as a file or as a clean block to paste somewhere, use the [Transcript Download tool](https://devanasolver.github.io/youtube-creator-toolkit/#transcript).
+
+1. Copy the video link.
+2. Paste it into the tool and press **Get transcript**.
+3. If the video has captions in more than one language, pick one.
+4. Tick **Timestamps in text** if you want the time before each line.
+5. Press **Copy text**, or download **.txt**, **.srt** or **.vtt**.
+
+It reads the public captions that YouTube already shows to viewers, whether the creator uploaded them or YouTube generated them. It does not download video or audio.
+
+### 3. Get your own captions from YouTube Studio
+
+If it is your video, you can edit and download your own captions from the Subtitles area of YouTube Studio. This is the right place to fix mistakes, because fixing them there fixes the captions for every viewer.
+
+## Which file type do you need?
+
+| Format | What it is | Use it for |
+| --- | --- | --- |
+| .txt | Plain text | Notes, articles, feeding text to a summarizer |
+| .srt | Text with numbered cues and timecodes | Most video editors and players |
+| .vtt | Web version of subtitles | Web video players and some platforms |
+
+If you have an existing caption file and just want it cleaned, see the [caption cleaner guide](https://devanasolver.github.io/youtube-creator-toolkit/blog/clean-srt-vtt-caption-files/).
+
+## How accurate is it?
+
+The text is only as good as the captions. YouTube's [automatic captioning help](https://support.google.com/youtube/answer/6373554) says automatic captions are made by machine learning, quality varies, and they "might misrepresent the spoken content" because of mispronunciations, accents, dialects or background noise. YouTube tells creators to review them and fix what is wrong.
+
+So before you quote someone, check the sentence against the video. Names, numbers and technical terms are the most likely to be wrong.
+
+## Why a video might have no transcript
+
+YouTube lists several reasons automatic captions may not exist: they are not ready yet because the audio is complex, the language is not supported, the video is too long, the sound quality is poor, there is a long silence at the start, or multiple speakers talk over each other. The creator can also turn captions off. If a video has no captions, the tool says so instead of making something up.
+
+Sometimes YouTube blocks the lookup. The tool retries automatically, but if it still fails, try again a bit later or use the transcript panel on YouTube.
+
+## Using transcripts the right way
+
+A transcript of someone else's video is still their work. Reading it for research is fine. Republishing it as your own article is not. If you quote, quote a short part and say where it is from. For your own videos, a transcript is a good starting point for a blog post, show notes or chapters, but rewrite it so it reads well in writing.
+
+## FAQ
+
+### How do I get a transcript of a YouTube video?
+Open the video, expand the description and click Show transcript. Or paste the link into the Transcript Download tool and copy the text or save a .txt, .srt or .vtt file.
+
+### Why does a YouTube video have no transcript?
+Usually because it has no captions. Auto-captions may be missing if the language is unsupported, the audio is poor or the video is very long, or the creator turned them off.
+
+### Are YouTube auto-generated captions accurate?
+Not always. YouTube says they can misrepresent what was said because of accents, noise and similar issues. Check important parts.
+
+### Does this download the video?
+No. It only reads the captions. This toolkit does not include video or audio downloaders.
+
+### Can I get a transcript in another language?
+Only if the video has captions in that language. The tool shows the languages that exist for that video.
+
+## Sources
+
+- https://support.google.com/youtube/answer/15930243
+- https://support.google.com/youtube/answer/6373554
+
+---
+From Creator Toolkit: https://devanasolver.github.io/youtube-creator-toolkit/
+
+====
+
+# A YouTube Channel Audit Checklist You Can Finish in 30 Minutes
+
+Source: https://devanasolver.github.io/youtube-creator-toolkit/blog/youtube-channel-audit-checklist/
+Published: 2026-10-05 | Updated: 2026-10-18 | Site: Creator Toolkit (free YouTube creator tools)
+Related free tool: Channel Audit Checklist - https://devanasolver.github.io/youtube-creator-toolkit/#audit
+
+**TL;DR:** A channel audit is a short list of things to check, not a score that predicts growth. The Channel Audit Checklist has 20 items in four groups - setup, content quality, discoverability, and consistency with analytics. Tick what you already do, fix the gaps in order, and revisit it every few months.
+
+An audit is a way to find the boring problems that quietly hold a channel back: a vague About page, a missing thumbnail, a description that says nothing. It will not make a channel grow by itself. It makes sure the basics are done so your good videos get a fair chance.
+
+The [Channel Audit Checklist](https://devanasolver.github.io/youtube-creator-toolkit/#audit) has 20 items in four groups. Below is what each group is for and how to judge your answers honestly.
+
+## How to run a YouTube channel audit
+
+1. Open the checklist and go group by group. Be strict. If you are not sure, leave it unticked.
+2. Look at your five most recent videos for the content and discoverability items. One great video does not mean the habit exists.
+3. Write down the three unticked items that would be easiest to fix. Do those first.
+4. Open YouTube Studio Analytics for the last 28 days and fill in the analytics items with real data.
+5. Come back in a few months. The checklist saves your ticks in your browser so you can compare.
+
+## Group 1: Channel setup
+
+This is what a first-time visitor sees. Check that your name and handle match your topic, your banner and profile picture are readable on a phone, and your About section says who the channel is for and what they get. Add your website or social links, and set a featured video or trailer for new visitors.
+
+There is no magic here. It is about not making a new visitor guess what you do.
+
+## Group 2: Content quality
+
+- **A hook in the first seconds.** YouTube's [audience retention report](https://support.google.com/youtube/answer/9314415) has an Intros measure: the percentage of your audience still watching after the first 30 seconds. Look at it on your last few videos and see where people leave.
+- **Titles that lead with the topic.** See the [title guide](https://devanasolver.github.io/youtube-creator-toolkit/blog/youtube-title-ideas-that-are-not-clickbait/).
+- **A custom thumbnail on every upload.** Check it at small size.
+- **End screens and cards** that point to a next video. YouTube's video settings page says a video must be 25 seconds or longer to add an end screen.
+- **Clean audio.** Viewers forgive rough video faster than bad sound.
+
+## Group 3: Discoverability
+
+These are the basics YouTube's own help describes: the main keyword in the title and description, a description whose first lines stand on their own, relevant hashtags, and captions. YouTube says tags play a minimal role, so do not obsess over them. It also says automatic captions can misrepresent what was said, so review and fix them. See the [transcript guide](https://devanasolver.github.io/youtube-creator-toolkit/blog/how-to-get-a-youtube-transcript/) for ideas on using captions.
+
+## Group 4: Consistency and analytics
+
+Pick an upload schedule you can really keep for six months. Then check your click-through rate and retention after every upload. YouTube's [click-through rate FAQ](https://support.google.com/youtube/answer/7628154) warns against deciding without enough data, and against reacting to small changes. Look at the numbers after the video has gathered a fair number of impressions, not minutes after publishing.
+
+## How to use the result
+
+The checklist shows a percentage. It is a progress bar for your own habits, not a rating from YouTube and not a forecast. A channel with 100% can still struggle if the videos are not what people want, and a channel at 60% can do well if its videos are great. Use it to find what is missing, not to judge the channel.
+
+## FAQ
+
+### What should I check in a YouTube channel audit?
+Four things: channel setup, content quality, discoverability and consistency with analytics. The checklist breaks these into 20 items you can tick.
+
+### How often should I audit my channel?
+Every few months is plenty. After big changes, such as a new topic or a redesign, run it again.
+
+### Does a higher audit score mean more views?
+No. It shows how many basics you have covered. It cannot predict views or ranking.
+
+### Does the checklist save my answers?
+Yes, in your own browser on your own device. It is not sent to a server.
+
+### What is the first thing to fix?
+Whatever a new viewer sees first and cannot understand: the channel name, the About text, and the thumbnails and titles of your latest videos.
+
+## Sources
+
+- https://support.google.com/youtube/answer/57404
+- https://support.google.com/youtube/answer/7628154
+- https://support.google.com/youtube/answer/9314415
+- https://support.google.com/youtube/answer/6373554
+
+---
+From Creator Toolkit: https://devanasolver.github.io/youtube-creator-toolkit/
+
+====
+
+# YouTube Partner Program Requirements Explained (500 vs 1,000 Subscribers)
+
+Source: https://devanasolver.github.io/youtube-creator-toolkit/blog/youtube-partner-program-requirements-explained/
+Published: 2026-10-04 | Updated: 2026-10-18 | Site: Creator Toolkit (free YouTube creator tools)
+Related free tool: Monetization Progress tracker - https://devanasolver.github.io/youtube-creator-toolkit/#monetization
+
+**TL;DR:** YouTube has two entry levels. In eligible countries you can apply at 500 subscribers, 3 public uploads in 90 days and 3,000 watch hours (or 3 million Shorts views) for fan funding features. Ad revenue sharing needs 1,000 subscribers plus 4,000 watch hours in 12 months or 10 million Shorts views in 90 days. The Monetization Progress tracker shows how close you are to each.
+
+Most creators ask the same thing early on: how many subscribers and hours do I need before I can earn money? The answer has two parts now, and the numbers depend on your country. This page uses YouTube's own help pages, read on the date at the bottom.
+
+## The two tiers
+
+| | Fan funding tier (expanded program) | Full tier (ad revenue sharing) |
+| --- | --- | --- |
+| Subscribers | 500 | 1,000 |
+| Uploads | 3 valid public uploads in the last 90 days | Not part of the headline threshold |
+| Watch time | 3,000 qualified watch hours in the last 12 months | 4,000 qualified watch hours in the last 12 months |
+| Or Shorts views | 3 million qualified Shorts views in the last 90 days | 10 million qualified Shorts views in the last 90 days |
+| What you get | Earlier access to fan funding and Shopping features | Revenue sharing from ads and YouTube Premium, plus the other features |
+
+Source: YouTube's pages on the [expanded Partner Program](https://support.google.com/youtube/answer/13429240) and the [Partner Program overview](https://support.google.com/youtube/answer/72851). You need to meet either the watch hours route or the Shorts views route, not both.
+
+The 500 subscriber tier is only for creators in the countries YouTube lists on its expanded program page. If your country is not on that list, YouTube says there are no changes for you, so the 1,000 subscriber rules apply.
+
+## What counts as a "qualified" hour or view?
+
+YouTube counts only certain watch time. For example, its overview page says qualified watch hours from Shorts views in the Shorts feed do not count towards the 4,000 hour threshold. Likewise, the Shorts route needs qualified views on public Shorts. The exact definitions are in a collapsed section of the [overview page](https://support.google.com/youtube/answer/72851), so check that section against your own numbers in YouTube Studio. The tracker cannot see inside your account, so it only does arithmetic on what you type.
+
+## Other requirements besides the numbers
+
+Hitting the numbers is not enough. YouTube's overview lists these as well:
+
+- Follow the channel monetization policies.
+- Live in a country or region where the program is available.
+- Have no active Community Guidelines strikes.
+- Turn on 2-Step Verification on your Google Account.
+- Have advanced features access.
+- Link one active AdSense for YouTube account, or set one up in Studio when you apply.
+
+## How to check if your channel can apply
+
+1. Open YouTube Studio and look at the **Earn** area. It shows your own eligibility and has a Get notified option.
+2. Write down your subscribers, your public watch hours for the last 12 months, and your Shorts views for the last 90 days from Analytics.
+3. Enter them in the [Monetization Progress tracker](https://devanasolver.github.io/youtube-creator-toolkit/#monetization) to see the percentage for each tier.
+4. Check the non-number requirements above, especially strikes and 2-Step Verification.
+5. When you are eligible, choose **Apply now** in the Earn area.
+
+## What happens after you apply
+
+YouTube says an application goes to automated systems and human reviewers who look at the channel as a whole. A decision typically takes about a month, and delays are possible. If you are turned down, the help page says you can try again after a waiting period (30 days for a first rejection, 90 days after that) and should review your channel against the policies first.
+
+One more point from the same page: YouTube may turn off monetization on channels that have not uploaded a video or posted to the Posts tab for six months or more.
+
+## A note on changes
+
+YouTube's overview page currently shows a notice about updated Partner Program terms starting February 1, 2027, with creators asked to accept the updated terms in Studio by January 31, 2027. Rules change, so treat any article, including this one, as a snapshot and check the Earn tab for your own channel.
+
+## What the tracker does not do
+
+- It does not know your real numbers. You type them in.
+- It does not check your country, strikes, 2-Step Verification or AdSense link.
+- It does not predict when you will reach the goal or promise that you will.
+- It does not check whether your watch hours are "qualified". Use the figure YouTube Studio gives you.
+
+## FAQ
+
+### How many subscribers do you need to monetize on YouTube?
+In countries where the expanded program is available, 500 subscribers (with 3 public uploads in 90 days and 3,000 watch hours or 3 million Shorts views) gives access to fan funding features. For ad revenue sharing you need 1,000 subscribers with 4,000 watch hours in 12 months or 10 million Shorts views in 90 days.
+
+### Do I need 4,000 watch hours and 10 million Shorts views?
+No. It is one or the other. Pick the route that matches how your channel gets its views.
+
+### Do Shorts watch hours count towards 4,000 hours?
+YouTube says qualified watch hours from Shorts views in the Shorts feed do not count towards the 4,000 hour threshold. Shorts have their own 10 million view route.
+
+### How long does the review take?
+YouTube says it is typically about one month, and it can take longer when volumes are high.
+
+### Can I buy views or subscribers to qualify?
+No. YouTube's fake engagement rules prohibit it, and bought numbers can get a channel removed. The tracker has no feature to buy anything.
+
+## Sources
+
+- https://support.google.com/youtube/answer/72851
+- https://support.google.com/youtube/answer/13429240
+- https://support.google.com/youtube/answer/9314357
+
+---
+From Creator Toolkit: https://devanasolver.github.io/youtube-creator-toolkit/
+
+====
+
+# YouTube Title Ideas That Work Without Clickbait
+
+Source: https://devanasolver.github.io/youtube-creator-toolkit/blog/youtube-title-ideas-that-are-not-clickbait/
+Published: 2026-10-03 | Updated: 2026-10-18 | Site: Creator Toolkit (free YouTube creator tools)
+Related free tool: Title and Tag Ideas generator - https://devanasolver.github.io/youtube-creator-toolkit/#titles
+
+**TL;DR:** A good title tells the right viewer what they get, uses the words they would actually search, and keeps the main phrase near the front. The Title and Tag Ideas tool gives you ten angles and a starter set of tags for any topic. Treat the output as a first draft and rewrite it to match your real video.
+
+A title has two jobs. It has to match what a viewer is searching for, and it has to make the right person want to click. The [Title and Tag Ideas tool](https://devanasolver.github.io/youtube-creator-toolkit/#titles) helps with the first draft. This guide explains how to pick a good one and fix a weak one.
+
+## What YouTube says about search
+
+YouTube's [search help page](https://support.google.com/youtube/answer/16090438) says ranking looks at relevance, engagement and quality. For relevance it looks at how well the title, tags, description and the video content match the search. So the title matters, but it is only one signal. Nobody outside YouTube can tell you the exact weight of each part, and anyone who claims to is guessing.
+
+## How to write a YouTube title from a topic
+
+1. Start with the plain topic in words a viewer would type. "Indoor gardening for beginners" is better than a clever phrase nobody searches.
+2. Pick an angle. Is this a how-to, a list, a mistake, a comparison, a story or a result? The angle is the reason to click.
+3. Put the main phrase early. Long titles get cut off in search results and on phones, so the words at the front do the most work.
+4. Keep it under 100 characters. That is YouTube's hard limit for a title, per its [video settings page](https://support.google.com/youtube/answer/57404). Staying near 60 is a safer habit so little gets cut.
+5. Check the promise. Read the title, then read your first 30 seconds. If the video does not deliver what the title says, change the title.
+
+## Ten title angles that work
+
+The tool fills these patterns with your topic:
+
+- **The hidden part:** "[Topic]: What Nobody Tells You"
+- **The step by step:** "How to [Topic] (Step by Step)"
+- **The test:** "I Tried [Topic] for 30 Days - Honest Results"
+- **The time box:** "[Topic] Explained in Under 10 Minutes"
+- **The myth bust:** "The Truth About [Topic]"
+- **The mistakes list:** "7 [Topic] Mistakes Beginners Always Make"
+- **The fix:** "Why Your [Topic] Isn't Working (and How to Fix It)"
+- **The starter:** "[Topic] for Beginners: Start Here"
+- **The pause:** "Before You Start [Topic], Watch This"
+- **The guide:** "[Topic] in 2026: The Complete Guide"
+
+Only use a pattern if it is true. "I Tried it for 30 Days" is only a title if you did.
+
+## Clickbait is a real risk, not just a style problem
+
+YouTube's [spam and deceptive practices policy](https://support.google.com/youtube/answer/2801973) lists malicious clickbait: titles, thumbnails or descriptions that trick people into clicking on a video that does not deliver what it promised. YouTube's own [click-through rate help](https://support.google.com/youtube/answer/7628154) also says clickbait videos tend to have low average view duration, so they are less likely to be recommended. A title that overpromises can win the click and lose the video.
+
+## What about the tags?
+
+The tool also suggests a starter set of tags. YouTube's [video settings page](https://support.google.com/youtube/answer/57404) says tags can help when your topic is often misspelled, and otherwise "play a minimal role in your video's discovery." So do not spend an hour on them. Add the main topic and common misspellings, then move on. For more on this, see the [tags guide](https://devanasolver.github.io/youtube-creator-toolkit/blog/youtube-tags-extractor-do-tags-matter/).
+
+## Limits of a title generator
+
+- It uses templates. It does not know your video, your audience or your niche, so some results will sound off. Delete those.
+- It cannot predict views, ranking or click-through rate.
+- It does not check what is already ranking. For that, use [keyword suggestions](https://devanasolver.github.io/youtube-creator-toolkit/blog/youtube-keyword-research-with-autocomplete/) and look at the search results yourself.
+
+## FAQ
+
+### How long should a YouTube title be?
+YouTube allows up to 100 characters. Many creators aim for roughly 60 or fewer so the whole title shows on phones and in search results. That 60 figure is a common habit, not a YouTube rule.
+
+### Do keywords in the title help?
+Yes, relevance is one thing YouTube says it looks at, and the title is one of the places it checks. Use the words a viewer would actually type, and write it for a person first.
+
+### Are numbers in titles better?
+Not always. A number can make a promise concrete, such as "7 mistakes". It is a choice, not a requirement.
+
+### Can a title generator guarantee more views?
+No. No tool can. A title helps people understand the video and decide to click. Views depend on the video, the audience and what YouTube chooses to recommend.
+
+### Should I change the title of an old video?
+You can, but change one thing at a time so you can see the effect. YouTube also has a Test and Compare feature in Studio that can test up to three titles and thumbnails on eligible videos.
+
+## Sources
+
+- https://support.google.com/youtube/answer/16090438
+- https://support.google.com/youtube/answer/57404
+- https://support.google.com/youtube/answer/7628154
+- https://support.google.com/youtube/answer/2801973
+
+---
+From Creator Toolkit: https://devanasolver.github.io/youtube-creator-toolkit/
+
+====
+
+# How to Download a YouTube Thumbnail in Every Size
+
+Source: https://devanasolver.github.io/youtube-creator-toolkit/blog/how-to-download-youtube-thumbnails/
+Published: 2026-10-02 | Updated: 2026-10-18 | Site: Creator Toolkit (free YouTube creator tools)
+Related free tool: Thumbnail Grabber - https://devanasolver.github.io/youtube-creator-toolkit/#thumbnails
+
+**TL;DR:** Paste a YouTube link into the Thumbnail Grabber and it lists every thumbnail size YouTube has for that video, from 320 x 180 up to the 1280 x 720 max resolution file, so you can save the one you need. If you are making your own, YouTube recommends 3840 x 2160 pixels in JPG or PNG with a 16:9 shape.
+
+Every public YouTube video has a thumbnail image stored in several sizes. You can save any of them without a screenshot. The Creator Toolkit [Thumbnail Grabber](https://devanasolver.github.io/youtube-creator-toolkit/#thumbnails) shows all of them for a link you paste, so you can pick the size you want and download it.
+
+## What sizes does YouTube keep?
+
+YouTube stores a thumbnail for each video at a few fixed sizes. These are the ones the grabber lists:
+
+| Size name | Dimensions | Good for |
+| --- | --- | --- |
+| Max resolution | 1280 x 720 | Blog headers, presentations, reviewing a design |
+| Standard | 640 x 480 | Medium previews |
+| High | 480 x 360 | Small embeds |
+| Medium | 320 x 180 | Tiny previews and lists |
+
+The max resolution file does not exist for every video. If a video was uploaded in lower quality, or is very old, YouTube may only have the smaller sizes. The grabber shows what is available and hides what is not.
+
+## How to download a YouTube thumbnail
+
+1. Open the video on YouTube and copy the link from the address bar or the Share button. Watch links, youtu.be links, Shorts links, embed links and plain 11-character video IDs all work.
+2. Paste it into the [Thumbnail Grabber](https://devanasolver.github.io/youtube-creator-toolkit/#thumbnails) and press **Get thumbnails**.
+3. Pick the size you need. Open it in a new tab to check it, or use the download button.
+4. If you plan to reuse the image, read the section below first.
+
+## Can you reuse someone else's thumbnail?
+
+Downloading an image is easy. Having the right to use it is a separate question. A thumbnail is usually the creator's artwork, so copying it into your own video or post without permission can be a copyright problem. Good reasons to grab a thumbnail are research, a reference for your own design, or a screenshot for a review where you are allowed to show it. When in doubt, ask the creator.
+
+Also keep in mind that YouTube's [thumbnails policy](https://support.google.com/youtube/answer/9229980) does not allow a thumbnail that misleads viewers into thinking they will see something that is not in the video. That applies to the thumbnails you make too.
+
+## What YouTube says about your own thumbnails
+
+Here is what YouTube's [custom thumbnail help page](https://support.google.com/youtube/answer/72431) recommends today:
+
+- A resolution of 3840 x 2160 pixels for videos (2160 x 3840 for Shorts), with a minimum width of 640 pixels for videos.
+- JPG or PNG files.
+- An aspect ratio of 16:9 for videos and 9:16 for Shorts.
+- File size limits that depend on the device. Uploads from a computer allow up to 50 MB. Mobile uploads for video thumbnails are limited to 2 MB.
+- Uploading a custom thumbnail needs a verified account.
+
+YouTube also says vertical videos that use a 16:9 custom thumbnail get an auto-generated 4:5 thumbnail on the home, explore and subscription pages. Your own thumbnail still shows in other places, such as the watch feed and on desktop.
+
+## Tips for checking a thumbnail before you publish
+
+- Shrink it. Most viewers see your thumbnail at around the size of a postage stamp. If the text is not readable at 320 pixels wide, it is too small.
+- Test it against the competition. Put your thumbnail next to videos in the same topic. The [Thumbnail Preview and A/B Compare](https://devanasolver.github.io/youtube-creator-toolkit/#abtest) tool shows it in a mock feed.
+- Keep one idea per image. A face, an object and a few big words is plenty.
+- Match the promise to the video. A thumbnail that overpromises gets clicks and then people leave, and YouTube's own help says clickbait tends to produce low average view duration.
+
+## Limits of the Thumbnail Grabber
+
+- It only reads public videos. Private and deleted videos have no public thumbnail.
+- It shows the thumbnail YouTube currently serves. If the creator changed it recently, you may see the old one for a short time.
+- It does not tell you which thumbnail performs better. Only YouTube Studio data can do that.
+
+## FAQ
+
+### How do I download a YouTube thumbnail?
+Copy the video link, paste it into the Thumbnail Grabber, press Get thumbnails and save the size you want. No sign-up is needed.
+
+### What is the biggest YouTube thumbnail size I can download?
+For most videos it is the 1280 x 720 max resolution file. Some videos only have smaller sizes.
+
+### What size should my own YouTube thumbnail be?
+YouTube recommends 3840 x 2160 pixels for videos with a 16:9 aspect ratio, and at least 640 pixels wide. Use JPG or PNG. On a computer the limit is 50 MB.
+
+### Can I get the thumbnail from a Short?
+Yes. Paste the Shorts link. Shorts thumbnails are 9:16 when the creator uploaded a custom one, so the images can look different from long videos.
+
+### Is it legal to use another creator's thumbnail?
+Downloading is not the problem, reusing is. A thumbnail is normally the creator's work, so ask for permission unless a specific exception applies. This is general information, not legal advice.
+
+## Sources
+
+- https://support.google.com/youtube/answer/72431
+- https://support.google.com/youtube/answer/9229980
+
+---
+From Creator Toolkit: https://devanasolver.github.io/youtube-creator-toolkit/

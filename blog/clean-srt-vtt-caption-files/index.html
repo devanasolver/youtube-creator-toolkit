@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Clean and Convert SRT and VTT Caption Files | Creator Toolkit</title>
+<meta name="description" content="Remove style tags and sound cues, merge repeated lines, shift timing and convert between SRT, VTT and plain text, all in your browser without uploading the file.">
+<link rel="canonical" href="https://devanasolver.github.io/youtube-creator-toolkit/blog/clean-srt-vtt-caption-files/">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta property="og:site_name" content="Creator Toolkit">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Clean and Convert SRT and VTT Caption Files | Creator Toolkit">
+<meta property="og:description" content="Remove style tags and sound cues, merge repeated lines, shift timing and convert between SRT, VTT and plain text, all in your browser without uploading the file.">
+<meta property="og:url" content="https://devanasolver.github.io/youtube-creator-toolkit/blog/clean-srt-vtt-caption-files/">
+<meta property="og:image" content="https://devanasolver.github.io/youtube-creator-toolkit/assets/og/clean-srt-vtt-caption-files.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Clean and Convert SRT and VTT Caption Files | Creator Toolkit">
+<meta name="twitter:description" content="Remove style tags and sound cues, merge repeated lines, shift timing and convert between SRT, VTT and plain text, all in your browser without uploading the file.">
+<meta name="twitter:image" content="https://devanasolver.github.io/youtube-creator-toolkit/assets/og/clean-srt-vtt-caption-files.png">
+<meta property="article:published_time" content="2026-10-07">
+<meta property="article:modified_time" content="2026-10-18">
+<link rel="alternate" type="text/markdown" href="https://devanasolver.github.io/youtube-creator-toolkit/blog/clean-srt-vtt-caption-files/index.md">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+<link rel="alternate" type="application/rss+xml" title="Creator Toolkit blog" href="https://devanasolver.github.io/youtube-creator-toolkit/feed.xml">
+<link rel="stylesheet" href="../../assets/css/styles.css">
+<link rel="stylesheet" href="../../assets/css/blog.css">
+<script>try{var t=new URLSearchParams(location.search).get("theme");t=(t==="light"||t==="dark")?t:localStorage.getItem("ct-theme");if(!t&&matchMedia("(prefers-color-scheme: light)").matches)t="light";if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"How to Clean and Convert SRT and VTT Caption Files","description":"Remove style tags and sound cues, merge repeated lines, shift timing and convert between SRT, VTT and plain text, all in your browser without uploading the file.","image":["https://devanasolver.github.io/youtube-creator-toolkit/assets/og/clean-srt-vtt-caption-files.png"],"datePublished":"2026-10-07","dateModified":"2026-10-18","mainEntityOfPage":{"@type":"WebPage","@id":"https://devanasolver.github.io/youtube-creator-toolkit/blog/clean-srt-vtt-caption-files/"},"author":{"@type":"Organization","name":"Creator Toolkit","url":"https://devanasolver.github.io/youtube-creator-toolkit/","logo":{"@type":"ImageObject","url":"https://devanasolver.github.io/youtube-creator-toolkit/assets/og/default.png"}},"publisher":{"@type":"Organization","name":"Creator Toolkit","url":"https://devanasolver.github.io/youtube-creator-toolkit/","logo":{"@type":"ImageObject","url":"https://devanasolver.github.io/youtube-creator-toolkit/assets/og/default.png"}},"inLanguage":"en","wordCount":629,"articleSection":"YouTube creator guides"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Creator Toolkit","item":"https://devanasolver.github.io/youtube-creator-toolkit/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://devanasolver.github.io/youtube-creator-toolkit/blog/"},{"@type":"ListItem","position":3,"name":"How to Clean and Convert SRT and VTT Caption Files","item":"https://devanasolver.github.io/youtube-creator-toolkit/blog/clean-srt-vtt-caption-files/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the difference between SRT and VTT?","acceptedAnswer":{"@type":"Answer","text":"Both hold captions with timecodes. SRT is the older and simpler one. VTT is the web standard, begins with WEBVTT and uses dots in the timecodes."}},{"@type":"Question","name":"How do I remove [music] from a caption file?","acceptedAnswer":{"@type":"Answer","text":"Tick the option to remove bracketed cues. It removes text in square brackets and parentheses such as [music] and (applause)."}},{"@type":"Question","name":"How do I fix captions that are out of sync?","acceptedAnswer":{"@type":"Answer","text":"Use the Shift timing box. A positive number delays all captions, a negative number moves them earlier."}},{"@type":"Question","name":"Is my caption file uploaded anywhere?","acceptedAnswer":{"@type":"Answer","text":"No. The cleaner runs in your browser."}},{"@type":"Question","name":"Can it convert SRT to VTT?","acceptedAnswer":{"@type":"Answer","text":"Yes. Load an SRT file and download the result as .vtt, or the other way around."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"How to clean a caption file","description":"Remove style tags and sound cues, merge repeated lines, shift timing and convert between SRT, VTT and plain text, all in your browser without uploading the file.","step":[{"@type":"HowToStep","position":1,"name":"Open the cleaner and choose your file, or paste the text into the box","text":"Open the cleaner and choose your file, or paste the text into the box. A .srt, .vtt or .txt file works."},{"@type":"HowToStep","position":2,"name":"Choose what to remove","text":"Choose what to remove:"},{"@type":"HowToStep","position":3,"name":"Optionally set Shift timing in seconds","text":"Optionally set Shift timing in seconds. Use a positive number to move captions later and a negative number to move them earlier."},{"@type":"HowToStep","position":4,"name":"Check the result in the output box","text":"Check the result in the output box."},{"@type":"HowToStep","position":5,"name":"Copy the clean text, or download ","text":"Copy the clean text, or download .txt, .srt or .vtt."}]}</script>
+</head>
+<body>
+<div class="glow glow-a"></div>
+<div class="glow glow-b"></div>
+<header class="site-header">
+  <a class="brand" href="../../">
+    <img src="../../assets/img/logo.svg" alt="Creator Toolkit logo" width="40" height="40">
+    <span>Creator Toolkit</span>
+  </a>
+  <nav class="main-nav" aria-label="Main">
+    <a href="../../#thumbnails">Tools</a>
+    <a href="../../blog/" aria-current="page" class="active">Blog</a>
+  </nav>
+  <a class="blog-link active" href="../../blog/">Blog</a>
+  <a class="btn-support" href="https://buymeacoffee.com/isaac49" target="_blank" rel="noopener">&#9749; <span>Buy me a coffee</span></a>
+  <button id="themeToggle" class="theme-toggle" aria-label="Switch between dark and light theme">
+    <span class="icon-sun">&#9728;</span><span class="icon-moon">&#9790;</span>
+  </button>
+</header>
+
+<main class="blog-main">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="../../">Creator Toolkit</a><span>/</span><a href="../../blog/">Blog</a><span>/</span><span aria-current="page">Clean SRT and VTT files</span></nav>
+  <article class="post glass" itemscope itemtype="https://schema.org/BlogPosting">
+    <header class="post-head">
+      <p class="eyebrow">Transcripts</p>
+      <h1 itemprop="headline">How to Clean and Convert SRT and VTT Caption Files</h1>
+      <p class="post-meta"><time datetime="2026-10-07" itemprop="datePublished">October 7, 2026</time> &middot; Updated <time datetime="2026-10-18" itemprop="dateModified">October 18, 2026</time> &middot; 3 min read</p>
+    </header>
+    <aside class="tldr" aria-label="Short answer"><strong>TL;DR</strong><p>Caption files often come with formatting tags, [music] cues, repeated lines and timing that is slightly off. The SRT and VTT cleaner in the Transcript section removes the noise, merges duplicates, shifts timing by a number of seconds and exports .txt, .srt or .vtt. It runs in your browser, so the file is never uploaded.</p></aside>
+    <div class="llm-bar" role="group" aria-label="Use this article with an AI assistant">
+      <button type="button" class="btn btn-mini llm-copy" id="llmCopy">Copy for LLM</button>
+      <a class="btn btn-mini" href="https://chatgpt.com/?q=Read%20this%20article%20and%20answer%20from%20it%3A%20https%3A%2F%2Fdevanasolver.github.io%2Fyoutube-creator-toolkit%2Fblog%2Fclean-srt-vtt-caption-files%2F%0A%0AGive%20me%20a%20short%20summary%2C%20the%20key%20steps%2C%20and%20the%20limits%20it%20mentions%20about%20the%20SRT%20and%20VTT%20cleaner.%20Then%20ask%20what%20I%20want%20to%20do%20next." target="_blank" rel="noopener">Open in ChatGPT</a>
+      <a class="btn btn-mini" href="https://claude.ai/new?q=Read%20this%20article%20and%20answer%20from%20it%3A%20https%3A%2F%2Fdevanasolver.github.io%2Fyoutube-creator-toolkit%2Fblog%2Fclean-srt-vtt-caption-files%2F%0A%0AGive%20me%20a%20short%20summary%2C%20the%20key%20steps%2C%20and%20the%20limits%20it%20mentions%20about%20the%20SRT%20and%20VTT%20cleaner.%20Then%20ask%20what%20I%20want%20to%20do%20next." target="_blank" rel="noopener">Open in Claude</a>
+      <a class="btn btn-mini" href="https://www.perplexity.ai/search?q=Read%20this%20article%20and%20answer%20from%20it%3A%20https%3A%2F%2Fdevanasolver.github.io%2Fyoutube-creator-toolkit%2Fblog%2Fclean-srt-vtt-caption-files%2F%0A%0AGive%20me%20a%20short%20summary%2C%20the%20key%20steps%2C%20and%20the%20limits%20it%20mentions%20about%20the%20SRT%20and%20VTT%20cleaner.%20Then%20ask%20what%20I%20want%20to%20do%20next." target="_blank" rel="noopener">Ask Perplexity</a>
+      <a class="btn btn-mini" href="index.md">View as Markdown</a>
+    </div>
+    <script type="text/markdown" id="postMd"># How to Clean and Convert SRT and VTT Caption Files
+
+Source: https://devanasolver.github.io/youtube-creator-toolkit/blog/clean-srt-vtt-caption-files/
+Published: 2026-10-07 | Updated: 2026-10-18 | Site: Creator Toolkit (free YouTube creator tools)
+Related free tool: SRT and VTT cleaner - https://devanasolver.github.io/youtube-creator-toolkit/#transcript
+
+**TL;DR:** Caption files often come with formatting tags, [music] cues, repeated lines and timing that is slightly off. The SRT and VTT cleaner in the Transcript section removes the noise, merges duplicates, shifts timing by a number of seconds and exports .txt, .srt or .vtt. It runs in your browser, so the file is never uploaded.
+
+Caption files are simple text, but real ones are messy. Auto-generated files repeat lines. Subtitle tools leave tags like `<i>` or `{\an8}` in the text. Sound cues such as [music] or (applause) get in the way when you want to read the words. And if you cut the start of a video, every timestamp is now off. The cleaner in the [Transcript section](https://devanasolver.github.io/youtube-creator-toolkit/#transcript) fixes these without any account or upload.
+
+## What the two formats look like
+
+An **SRT** file is numbered blocks, each with a time range and the text:
+
+`1`, then `00:00:01,000 --> 00:00:03,500`, then the line of text.
+
+A **VTT** file is similar but starts with the word WEBVTT, and uses a dot instead of a comma in the time: `00:00:01.000`. Both are plain text, so you can open them in any text editor.
+
+## How to clean a caption file
+
+1. Open the [cleaner](https://devanasolver.github.io/youtube-creator-toolkit/#transcript) and choose your file, or paste the text into the box. A .srt, .vtt or .txt file works.
+2. Choose what to remove:
+   - **Style tags** like `<i>` and `{\an8}`. On by default.
+   - **Bracketed cues** like [music] and (applause). Off by default, because sometimes you want them.
+   - **Repeated lines**. On by default. This merges lines that repeat across neighboring cues, which is common in auto-captions.
+3. Optionally set **Shift timing** in seconds. Use a positive number to move captions later and a negative number to move them earlier.
+4. Check the result in the output box.
+5. Copy the clean text, or download .txt, .srt or .vtt.
+
+## When to shift timing
+
+Say you trimmed 4 seconds from the start of your video after making the captions. Enter -4 and every cue moves 4 seconds earlier. If the captions appear too early, use a positive number. Decimal values work, so 0.5 moves things by half a second. Always play the video once to confirm the sync.
+
+## Which output should you pick?
+
+- **.txt** for reading, notes and writing.
+- **.srt** for most editors and many video platforms.
+- **.vtt** for web players.
+
+If you plan to upload captions to your own YouTube video, YouTube's [help page on adding subtitles and captions](https://support.google.com/youtube/answer/2734796) lists the file types it accepts and how to upload them. Check that page for the current list.
+
+## Fixing auto-captions properly
+
+Cleaning is not the same as correcting. The tool removes noise, it does not fix wrong words. YouTube says automatic captions can misrepresent the spoken content and recommends reviewing them. If you care about accuracy, read through the cleaned text once and fix names and terms.
+
+## Privacy and limits
+
+- The file is processed in your browser and never uploaded.
+- If no timed captions are found in what you pasted, the tool says so. It expects SRT or VTT style timing lines such as `00:00:01,000 --> 00:00:03,000`.
+- It does not translate captions or check them for accuracy.
+- Very large files may be slow on an old phone or computer.
+
+## FAQ
+
+### What is the difference between SRT and VTT?
+Both hold captions with timecodes. SRT is the older and simpler one. VTT is the web standard, begins with WEBVTT and uses dots in the timecodes.
+
+### How do I remove [music] from a caption file?
+Tick the option to remove bracketed cues. It removes text in square brackets and parentheses such as [music] and (applause).
+
+### How do I fix captions that are out of sync?
+Use the Shift timing box. A positive number delays all captions, a negative number moves them earlier.
+
+### Is my caption file uploaded anywhere?
+No. The cleaner runs in your browser.
+
+### Can it convert SRT to VTT?
+Yes. Load an SRT file and download the result as .vtt, or the other way around.
+
+## Sources
+
+- https://support.google.com/youtube/answer/6373554
+- https://support.google.com/youtube/answer/2734796
+
+---
+From Creator Toolkit: https://devanasolver.github.io/youtube-creator-toolkit/</script>
+    <nav class="toc" aria-label="On this page"><strong>On this page</strong><ol><li><a href="#what-the-two-formats-look-like">What the two formats look like</a></li><li><a href="#how-to-clean-a-caption-file">How to clean a caption file</a></li><li><a href="#when-to-shift-timing">When to shift timing</a></li><li><a href="#which-output-should-you-pick">Which output should you pick?</a></li><li><a href="#fixing-auto-captions-properly">Fixing auto-captions properly</a></li><li><a href="#privacy-and-limits">Privacy and limits</a></li><li><a href="#faq">FAQ</a></li></ol></nav>
+    <div class="prose" itemprop="articleBody">
+<p>Caption files are simple text, but real ones are messy. Auto-generated files repeat lines. Subtitle tools leave tags like <code>&lt;i&gt;</code> or <code>{\an8}</code> in the text. Sound cues such as [music] or (applause) get in the way when you want to read the words. And if you cut the start of a video, every timestamp is now off. The cleaner in the <a href="../../#transcript">Transcript section</a> fixes these without any account or upload.</p>
+<h2 id="what-the-two-formats-look-like">What the two formats look like</h2>
+<p>An <strong>SRT</strong> file is numbered blocks, each with a time range and the text:</p>
+<p><code>1</code>, then <code>00:00:01,000 --&gt; 00:00:03,500</code>, then the line of text.</p>
+<p>A <strong>VTT</strong> file is similar but starts with the word WEBVTT, and uses a dot instead of a comma in the time: <code>00:00:01.000</code>. Both are plain text, so you can open them in any text editor.</p>
+<h2 id="how-to-clean-a-caption-file">How to clean a caption file</h2>
+<ol><li>Open the <a href="../../#transcript">cleaner</a> and choose your file, or paste the text into the box. A .srt, .vtt or .txt file works.</li><li>Choose what to remove:</li></ol>
+<p>- <strong>Style tags</strong> like <code>&lt;i&gt;</code> and <code>{\an8}</code>. On by default. - <strong>Bracketed cues</strong> like [music] and (applause). Off by default, because sometimes you want them. - <strong>Repeated lines</strong>. On by default. This merges lines that repeat across neighboring cues, which is common in auto-captions.</p>
+<ol><li>Optionally set <strong>Shift timing</strong> in seconds. Use a positive number to move captions later and a negative number to move them earlier.</li><li>Check the result in the output box.</li><li>Copy the clean text, or download .txt, .srt or .vtt.</li></ol>
+<h2 id="when-to-shift-timing">When to shift timing</h2>
+<p>Say you trimmed 4 seconds from the start of your video after making the captions. Enter -4 and every cue moves 4 seconds earlier. If the captions appear too early, use a positive number. Decimal values work, so 0.5 moves things by half a second. Always play the video once to confirm the sync.</p>
+<h2 id="which-output-should-you-pick">Which output should you pick?</h2>
+<ul><li><strong>.txt</strong> for reading, notes and writing.</li><li><strong>.srt</strong> for most editors and many video platforms.</li><li><strong>.vtt</strong> for web players.</li></ul>
+<p>If you plan to upload captions to your own YouTube video, YouTube's <a href="https://support.google.com/youtube/answer/2734796" rel="noopener">help page on adding subtitles and captions</a> lists the file types it accepts and how to upload them. Check that page for the current list.</p>
+<h2 id="fixing-auto-captions-properly">Fixing auto-captions properly</h2>
+<p>Cleaning is not the same as correcting. The tool removes noise, it does not fix wrong words. YouTube says automatic captions can misrepresent the spoken content and recommends reviewing them. If you care about accuracy, read through the cleaned text once and fix names and terms.</p>
+<h2 id="privacy-and-limits">Privacy and limits</h2>
+<ul><li>The file is processed in your browser and never uploaded.</li><li>If no timed captions are found in what you pasted, the tool says so. It expects SRT or VTT style timing lines such as <code>00:00:01,000 --&gt; 00:00:03,000</code>.</li><li>It does not translate captions or check them for accuracy.</li><li>Very large files may be slow on an old phone or computer.</li></ul>
+<h2 id="faq">FAQ</h2>
+<h3 id="what-is-the-difference-between-srt-and-vtt">What is the difference between SRT and VTT?</h3>
+<p>Both hold captions with timecodes. SRT is the older and simpler one. VTT is the web standard, begins with WEBVTT and uses dots in the timecodes.</p>
+<h3 id="how-do-i-remove-music-from-a-caption-file">How do I remove [music] from a caption file?</h3>
+<p>Tick the option to remove bracketed cues. It removes text in square brackets and parentheses such as [music] and (applause).</p>
+<h3 id="how-do-i-fix-captions-that-are-out-of-sync">How do I fix captions that are out of sync?</h3>
+<p>Use the Shift timing box. A positive number delays all captions, a negative number moves them earlier.</p>
+<h3 id="is-my-caption-file-uploaded-anywhere">Is my caption file uploaded anywhere?</h3>
+<p>No. The cleaner runs in your browser.</p>
+<h3 id="can-it-convert-srt-to-vtt">Can it convert SRT to VTT?</h3>
+<p>Yes. Load an SRT file and download the result as .vtt, or the other way around.</p>
+    </div>
+    <aside class="cta glass-in">
+      <h2>Try it: SRT and VTT cleaner</h2>
+      <p>Open the Transcript section and scroll to the cleaner. Drop in a .srt or .vtt file or paste the text, choose your options and copy or download the result.</p>
+      <a class="btn btn-primary" href="../../#transcript">Open the SRT and VTT cleaner</a>
+    </aside>
+    <section class="sources"><h2>Sources</h2><ul><li><a href="https://support.google.com/youtube/answer/6373554" rel="noopener">support.google.com/youtube/answer/6373554</a></li><li><a href="https://support.google.com/youtube/answer/2734796" rel="noopener">support.google.com/youtube/answer/2734796</a></li></ul><p class="hint">Checked on October 18, 2026. These are YouTube's own pages, so they are the final word if anything here differs.</p></section>
+  </article>
+  <section class="related"><h2>Keep reading</h2><div class="post-grid"><a class="post-card" href="../../blog/how-to-get-a-youtube-transcript/"><span class="eyebrow">Transcripts</span><h3>How to Get a YouTube Transcript (and Download It as TXT, SRT or VTT)</h3><p>Three ways to read or download a YouTube video's transcript, what auto-generated captions get wrong, and when a video has no transcript at all.</p><span class="meta">October 6, 2026 &middot; Tool: Transcript Download tool</span></a><a class="post-card" href="../../blog/how-to-add-youtube-chapters/"><span class="eyebrow">Descriptions</span><h3>How to Add Chapters to a YouTube Video (Rules, Format and Common Errors)</h3><p>The exact rules YouTube sets for video chapters - first timestamp at 0:00, at least three, 10 seconds minimum - with a format example and the common reasons chapters do not show.</p><span class="meta">October 13, 2026 &middot; Tool: Chapters Checker and Formatter</span></a><a class="post-card" href="../../blog/youtube-channel-audit-checklist/"><span class="eyebrow">Channel basics</span><h3>A YouTube Channel Audit Checklist You Can Finish in 30 Minutes</h3><p>A practical 20-point YouTube channel audit covering setup, content, discoverability and consistency, with the reason behind each check and what to ignore.</p><span class="meta">October 5, 2026 &middot; Tool: Channel Audit Checklist</span></a></div></section>
+</main>
+<footer class="site-footer">
+  <img src="../../assets/img/logo.svg" alt="" width="28" height="28">
+  <p>Creator Toolkit - free tools for YouTube creators. Open source under the MIT license.</p>
+  <p class="fine">Not affiliated with YouTube or Google. Articles are written for general guidance and checked against YouTube's public help pages on the date shown. YouTube changes its rules, so check the linked source before you rely on a number.</p>
+  <p class="foot-links"><a href="../../">Tools</a> <a href="../../blog/">Blog</a> <a href="https://devanasolver.github.io/youtube-creator-toolkit/feed.xml">RSS</a> <a href="https://devanasolver.github.io/youtube-creator-toolkit/llms.txt">llms.txt</a> <a href="https://github.com/devanasolver/youtube-creator-toolkit" rel="noopener">GitHub</a></p>
+  <p class="support-line">Find it useful? <a href="https://buymeacoffee.com/isaac49" target="_blank" rel="noopener">Buy me a coffee</a> - it keeps the tools free.</p>
+</footer>
+<script src="../../assets/js/blog.js"></script>
+</body>
+</html>

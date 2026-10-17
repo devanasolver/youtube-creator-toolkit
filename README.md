@@ -100,3 +100,8 @@ If the toolkit helps you, you can [buy me a coffee](https://buymeacoffee.com/isa
 ## License
 
 MIT. Not affiliated with YouTube or Google.
+
+
+## Blog
+
+Posts live in `blog-src/*.md` (small front matter, then Markdown). Run `node scripts/build-blog.mjs` to regenerate `blog/`, `sitemap.xml`, `feed.xml`, `robots.txt`, `llms.txt` and `llms-full.txt`. Commit the generated files; GitHub Pages serves them as-is.

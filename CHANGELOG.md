@@ -1,5 +1,17 @@
 # Changelog
 
+## 2.3.0 - 2026-10-18
+
+### Added
+- Blog: 18 guides, one for each free tool, in `blog/`. Written from `blog-src/*.md` and built to static HTML with `node scripts/build-blog.mjs` (no dependencies).
+- Each post: TL;DR, table of contents, FAQ, sources, breadcrumbs, canonical and Open Graph tags, BlogPosting, BreadcrumbList, FAQPage and HowTo JSON-LD, and a link to its tool.
+- "Copy for LLM" button (clean Markdown of the post) plus Open in ChatGPT / Claude / Perplexity prompt links and a `/index.md` version of every post.
+- `sitemap.xml`, `robots.txt`, `feed.xml` (RSS), `llms.txt` and `llms-full.txt`.
+- Blog link in the header, hero and footer; "Read the guide" links under each tool.
+
+### Fixed
+- Hashtag limit text now matches YouTube's current help page: all hashtags are ignored above 60 (was 15).
+
 ## 2.2.0 - 2026-10-18
 
 ### Added

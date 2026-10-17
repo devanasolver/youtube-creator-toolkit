@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /open/
+
+Sitemap: https://devanasolver.github.io/youtube-creator-toolkit/sitemap.xml

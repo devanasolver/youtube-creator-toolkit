@@ -243,7 +243,7 @@ function anRun(){
   var dl=desc.length;
   add(12,dl>=250?"pass":(dl>=100?"warn":"fail"),"Description length: "+dl+" characters","Write at least a few sentences (250+) that say what the video covers.");
   var hash=(desc.match(/(^|\s)#[\w]+/g)||[]).length;
-  add(6,hash>15?"fail":(hash>=1&&hash<=5?"pass":"warn"),hash>15?hash+" hashtags: YouTube ignores all hashtags above 15":(hash?hash+" hashtag(s) in the description":"No hashtags in the description"),"Use 1-5 relevant ones. The first three appear above the title.");
+  add(6,hash>60?"fail":(hash>=1&&hash<=5?"pass":"warn"),hash>60?hash+" hashtags: YouTube ignores all hashtags above 60":(hash?hash+" hashtag(s) in the description":"No hashtags in the description"),"Use 1-5 relevant ones. The first three appear above the title.");
   var stampsN=(desc.match(/(^|\n)\s*(\d{1,2}:)?\d{1,2}:\d{2}\b/g)||[]).length;
   add(6,stampsN>=3?"pass":"warn",stampsN>=3?"Chapter timestamps found ("+stampsN+")":"No chapter timestamps","Chapters help viewers jump around and can show in search. Use the Chapters tool below.");
   add(5,/https?:\/\//.test(desc)?"pass":"warn",/https?:\/\//.test(desc)?"Description includes a link":"No links in the description","Link your channel, playlist or next video.");
