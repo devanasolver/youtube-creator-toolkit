@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Creator Toolkit - Free YouTube Creator Tools</title>
-<meta name="description" content="Free, honest tools for YouTube creators: transcript download, channel stats lookup, keyword suggestions, title analyzer, thumbnail A/B preview, revenue estimator, chapters, upload planner and more. No sign-up, no cost.">
+<meta name="description" content="Free, honest tools for YouTube creators: transcript download, channel stats lookup, keyword suggestions, title analyzer, thumbnail A/B preview, revenue estimator, chapters, upload planner, app bio links and subscribe links. No sign-up, no cost.">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -23,7 +23,8 @@
     <a href="#channel">Channel</a>
     <a href="#keywords">Keywords</a>
     <a href="#analyzer">Analyzer</a>
-    <a href="#revenue">Revenue</a>
+    <a href="#app-links">App links</a>
+    <a href="#subscribe-links">Subscribe</a>
     <a href="#audit">Audit</a>
   </nav>
   <a class="btn-support" href="https://buymeacoffee.com/isaac49" target="_blank" rel="noopener">&#9749; <span>Buy me a coffee</span></a>
@@ -40,8 +41,11 @@
     <p class="lede">A clean toolkit for real YouTube creators. Download transcripts, research keywords, check titles, compare thumbnails, estimate revenue and audit your channel. Everything runs in your browser; a few lookups use a small free proxy that stores nothing.</p>
     <div class="hero-cta">
       <a class="btn btn-primary" href="#thumbnails">Open the toolkit</a>
+      <a class="btn btn-ghost" href="#app-links">Make a bio link</a>
+      <a class="btn btn-ghost" href="#video-stats">Video stats &amp; tags</a>
       <a class="btn btn-ghost" href="https://github.com/devanasolver/youtube-creator-toolkit" rel="noopener">View on GitHub</a>
     </div>
+    <nav class="tool-shortcuts" aria-label="New creator tools"><a href="#app-links">App bio links</a><a href="#subscribe-links">Subscribe links</a><a href="#video-stats">Video stats</a><a href="#tag-extractor">Extract tags</a></nav>
   </section>
 
   <!-- THUMBNAIL GRABBER -->
@@ -367,17 +371,89 @@
     <p class="hint">Always open the clip and read its own license before use. "Creative Commons" on YouTube means CC BY: you can reuse it with credit, but you are still responsible for checking the uploader had the rights.</p>
   </section>
 
+  <!-- APP LINK MAKER -->
+  <section id="app-links" class="tool glass">
+    <div class="tool-head"><span class="tool-num">14</span><div>
+      <h2>YouTube App Link Maker</h2>
+      <p>A better link for your bio. Give viewers a way to leave the in-app browser and open YouTube.</p>
+    </div></div>
+    <form id="appLinkForm" class="field-row">
+      <label class="sr-only" for="appLinkInput">YouTube video, Shorts, playlist or channel link</label>
+      <input type="text" id="appLinkInput" placeholder="Paste a YouTube video, Shorts, playlist or channel link" required autocomplete="off" spellcheck="false" aria-describedby="appLinkHint">
+      <button class="btn btn-primary" type="submit">Make app link</button>
+    </form>
+    <p class="hint" id="appLinkHint">Free. No sign-up. Supports watch links, youtu.be, Shorts, playlists, @handles and channel IDs.</p>
+    <div id="appLinkStatus" class="status" role="status" hidden></div>
+    <div id="appLinkResult" class="link-result" hidden>
+      <div class="link-output">
+        <label for="appLinkOutput">Your bio / share link</label>
+        <input type="text" id="appLinkOutput" readonly>
+        <div class="btn-row"><button class="btn btn-mini" id="appLinkCopy" type="button">Copy link</button><a class="btn btn-mini" id="appLinkTest" target="_blank" rel="noopener">Preview link</a><button class="btn btn-mini" id="appLinkQRSave" type="button">Download QR</button></div>
+        <p class="hint">Destination: <a id="appLinkDestination" target="_blank" rel="noopener" class="break-link"></a></p>
+      </div>
+      <div class="qr-wrap"><canvas id="appLinkQR" role="img" aria-label="QR code for your app link"></canvas><span>Scan with your phone</span></div>
+    </div>
+    <details class="link-notes"><summary>What this can and cannot do</summary>
+      <p>The share link opens a small page that tries YouTube on phones, with an "Open YouTube app" button for browsers that need a tap. Android uses an app intent; iPhone uses a YouTube URL scheme. Desktop viewers go to normal YouTube.</p>
+      <p>Instagram, TikTok, Facebook and Threads may block app opens or external-browser launches. No website can force its way out. Viewers may need the browser's menu, then "Open in browser" or Safari / Chrome. The page has a normal YouTube fallback if the app is missing.</p>
+      <p>This is a best-effort convenience link, not a guaranteed app opener, subscriber boost or revenue increase. Channel / playlist routing can vary with YouTube app versions. Test your link on your own phone before putting it in your bio.</p>
+    </details>
+  </section>
+
+  <!-- SUBSCRIBE LINKS -->
+  <section id="subscribe-links" class="tool glass">
+    <div class="tool-head"><span class="tool-num">15</span><div>
+      <h2>Subscribe Link Generator</h2>
+      <p>Turn your channel link into a copy-ready YouTube subscription confirmation link.</p>
+    </div></div>
+    <form id="subscribeForm" class="field-row">
+      <label class="sr-only" for="subscribeInput">YouTube channel link, @handle or channel ID</label>
+      <input type="text" id="subscribeInput" placeholder="youtube.com/@yourchannel or UC channel ID" required autocomplete="off" spellcheck="false" aria-describedby="subscribeHint">
+      <button class="btn btn-primary" id="subscribeMake" type="submit">Make subscribe link</button>
+    </form>
+    <p class="hint" id="subscribeHint">Paste a channel URL, @handle or UC channel ID. Handles resolve through the same free public-channel proxy used by Channel Stats Lookup.</p>
+    <div id="subscribeStatus" class="status" role="status" hidden></div>
+    <div id="subscribeResult" class="link-result" hidden>
+      <div class="link-output">
+        <label for="subscribeOutput">Your subscription link</label><input type="text" id="subscribeOutput" readonly>
+        <div class="btn-row"><button class="btn btn-mini" id="subscribeCopy" type="button">Copy link</button><a class="btn btn-mini" id="subscribeTest" target="_blank" rel="noopener">Open link</a><button class="btn btn-mini" id="subscribeQRSave" type="button">Download QR</button></div>
+        <p class="hint" id="subscribeChannel"></p>
+      </div>
+      <div class="qr-wrap"><canvas id="subscribeQR" role="img" aria-label="QR code for your subscription link"></canvas><span>Scan to visit the channel</span></div>
+    </div>
+    <p class="hint">Adds <code>sub_confirmation=1</code>. YouTube may show a subscribe confirmation on its website; viewers must confirm themselves. It does not auto-subscribe anyone, and the prompt may not appear in the mobile app, some browsers, or for existing subscribers.</p>
+  </section>
+
+  <section id="video-stats" class="tool glass">
+    <div class="tool-head"><span class="tool-num">16</span><div><h2>YouTube Video Public Stats</h2><p>Check a video's public views, likes, upload date and duration. Real metadata, not private channel analytics.</p></div></div>
+    <form id="videoStatsForm" class="field-row"><label class="sr-only" for="videoStatsInput">YouTube video or Shorts URL</label><input type="text" id="videoStatsInput" required placeholder="Paste a YouTube video or Shorts link" autocomplete="off"><button class="btn btn-primary" id="videoStatsGo">Look up video</button></form>
+    <div id="videoStatsStatus" class="status" role="status" hidden></div>
+    <div id="videoStatsResult" hidden><div class="result-meta"><a id="videoStatsTitle" target="_blank" rel="noopener"></a><span id="videoStatsChannel"></span></div><div id="videoStatsCards" class="stat-grid"></div><p id="videoStatsNote" class="hint"></p></div>
+    <p class="hint">Uses public YouTube page metadata through our free proxy. Counts can be delayed, hidden or unavailable. No audience retention, watch time, dislikes, traffic sources or actual earnings: those belong to the channel owner's YouTube Studio. Like / view rate is likes divided by views, not total engagement rate.</p>
+  </section>
+  <section id="tag-extractor" class="tool glass">
+    <div class="tool-head"><span class="tool-num">17</span><div><h2>YouTube Tags Extractor</h2><p>See the tags a public video exposes and copy them for your research.</p></div></div>
+    <form id="tagExtractForm" class="field-row"><label class="sr-only" for="tagExtractInput">YouTube video or Shorts URL</label><input type="text" id="tagExtractInput" required placeholder="Paste a YouTube video or Shorts link" autocomplete="off"><button class="btn btn-primary" id="tagExtractGo">Extract tags</button></form>
+    <div id="tagExtractStatus" class="status" role="status" hidden></div>
+    <div id="tagExtractResult" hidden><div class="result-meta"><a id="tagExtractTitle" target="_blank" rel="noopener"></a></div><div id="tagExtractCloud" class="tag-cloud" style="margin-top:18px"></div><label class="sr-only" for="tagExtractOutput">Comma-separated video tags</label><textarea id="tagExtractOutput" class="out" rows="3" readonly></textarea><div class="btn-row"><button type="button" class="btn btn-mini" id="tagExtractCopy">Copy tags</button><button type="button" class="btn btn-mini" id="tagExtractSave">Download .txt</button></div></div>
+    <p class="hint">These are video keyword tags, not hashtags. Some videos expose no tags or YouTube may block the lookup. Tags help with misspellings, but copying another creator's tags is not a ranking shortcut. For new ideas, use <a class="break-link" href="#keywords">Keyword &amp; Tag Suggestions</a>.</p>
+  </section>
+
 </main>
 
 <footer class="site-footer">
   <img src="assets/img/logo.svg" alt="" width="28" height="28">
   <p>Creator Toolkit - free tools for YouTube creators. Open source under the MIT license.</p>
-  <p class="fine">Not affiliated with YouTube or Google. Most tools run entirely in your browser. Transcript, channel and keyword lookups pass the link or text you enter through a small free proxy that stores nothing.</p>
+  <p class="fine">Not affiliated with YouTube or Google. Most tools run entirely in your browser. Transcript, channel, video metadata and keyword lookups pass the link or text you enter through a small free proxy that stores nothing.</p>
   <a href="https://github.com/devanasolver/youtube-creator-toolkit" rel="noopener">Star it on GitHub</a>
   <p class="support-line">Find it useful? <a href="https://buymeacoffee.com/isaac49" target="_blank" rel="noopener">Buy me a coffee</a> - it keeps the tools free.</p>
 </footer>
 
 <script src="assets/js/app.js"></script>
 <script src="assets/js/tools.js"></script>
+<script src="assets/js/vendor/qrcodegen.js"></script>
+<script src="assets/js/applink.js"></script>
+<script src="assets/js/link-tools.js"></script>
+<script src="assets/js/video-tools.js"></script>
 </body>
 </html>

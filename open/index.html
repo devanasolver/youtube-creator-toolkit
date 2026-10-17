@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex,nofollow">
+<title>Open in YouTube - Creator Toolkit</title>
+<meta name="description" content="Open a shared video, Short, playlist or channel in YouTube. Free, best-effort app links from Creator Toolkit.">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg"><link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body style="transition:none">
+<div class="glow glow-a"></div><div class="glow glow-b"></div>
+<header class="site-header"><a class="brand" href="../#app-links"><img src="../assets/img/logo.svg" width="40" height="40" alt=""><span>Creator Toolkit</span></a><button type="button" class="theme-toggle" id="themeToggle" aria-label="Switch between dark and light theme"><span class="icon-sun">&#9728;</span><span class="icon-moon">&#9790;</span></button></header>
+<main class="open-main">
+  <section class="tool glass">
+    <p class="eyebrow">YouTube app link</p><h1 id="openTitle">Open in YouTube</h1>
+    <p class="hint" id="openMessage" role="status">Reading your link...</p>
+    <div id="openContent" hidden>
+      <p class="destination" id="openDestination"></p>
+      <div class="open-actions"><a class="btn btn-primary" id="openApp">Open YouTube app</a><a class="btn btn-ghost" id="openWeb" rel="noreferrer">Continue on YouTube website</a><button class="btn btn-mini" type="button" id="openAlt" hidden>Try alternate iPhone link</button></div>
+      <p class="hint" id="openTimer" role="status"></p><button class="btn btn-mini" type="button" id="openStay">Stay here / stop automatic redirect</button>
+      <details class="link-notes" id="openHelp"><summary>Still inside Instagram, TikTok, Facebook or Threads?</summary><p>Some in-app browsers block app links. Use the menu (often three dots or the share button) and choose "Open in browser", Safari or Chrome, then tap "Open YouTube app" again. The wording varies by app.</p><p>The YouTube app must be installed. Your browser may ask permission to open it. No website can force another app to release its browser or guarantee which YouTube screen opens.</p></details>
+    </div>
+    <p class="hint"><a href="../#app-links">Make your own free YouTube app link</a></p>
+    <noscript><p class="hint">This redirect needs JavaScript to read the destination stored in the link. Enable JavaScript, or ask the sender for the original YouTube URL.</p></noscript>
+  </section>
+</main>
+<script src="../assets/js/applink.js"></script><script src="../assets/js/open-link.js"></script>
+</body></html>
