@@ -3,7 +3,8 @@
 
 /* ---------- Theme ---------- */
 var root=document.documentElement;
-var saved=localStorage.getItem("ct-theme");
+var urlTheme=new URLSearchParams(location.search).get("theme");
+var saved=(urlTheme==="light"||urlTheme==="dark")?urlTheme:localStorage.getItem("ct-theme");
 if(saved){root.setAttribute("data-theme",saved);}
 else if(window.matchMedia&&window.matchMedia("(prefers-color-scheme: light)").matches){root.setAttribute("data-theme","light");}
 document.getElementById("themeToggle").addEventListener("click",function(){
