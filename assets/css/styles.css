@@ -232,3 +232,13 @@ input[type=time]{width:auto;color:var(--text)}
   .stat b{font-size:21px}
   .score-row{flex-direction:column;align-items:flex-start}
 }
+
+/* support link */
+.btn-support{
+  margin-left:0;display:inline-flex;align-items:center;gap:8px;height:44px;padding:0 16px;border-radius:14px;
+  border:1px solid var(--card-border);background:var(--card);color:var(--text);text-decoration:none;font-weight:700;font-size:15px;white-space:nowrap;transition:border .2s,transform .15s;
+}
+.btn-support:hover{border-color:var(--accent-2);transform:translateY(-1px)}
+.support-line{margin-top:14px;font-size:15px}
+.site-footer .support-line a{margin-top:0;display:inline}
+@media (max-width:720px){.main-nav{display:none}.btn-support{margin-left:auto}.btn-support span{display:none}.btn-support{padding:0 14px}}

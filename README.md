@@ -48,6 +48,10 @@ python3 -m http.server 8000
 
 The site is a static page served with GitHub Pages from the `main` branch root.
 
+## Support
+
+If the toolkit helps you, you can [buy me a coffee](https://buymeacoffee.com/isaac49). Totally optional; the tools stay free.
+
 ## License
 
 MIT. Not affiliated with YouTube or Google.
