@@ -8,4 +8,4 @@ Small Cloudflare Pages Functions project (free tier) that the static site calls,
 
 It stores nothing and only answers requests from the live site (CORS allow-list in `functions/api/_util.js`). It never downloads video or audio.
 
-Deploy: `npx wrangler pages deploy proxy/public --project-name yt-transcript-proxy --branch main` (run from the repo root so `proxy/functions` is picked up; use `cd proxy` first).
+Deploy: `cd proxy && npx wrangler pages deploy public --project-name yt-transcript-proxy --branch main` (needs a Cloudflare API token with Pages edit access).
