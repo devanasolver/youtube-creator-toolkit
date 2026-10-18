@@ -1,0 +1,11 @@
+# One-click self-host for the Creator Toolkit.
+# The "Deploy on Hostinger" button in README.md reads this file.
+# Locally: docker compose up -d --build  ->  http://localhost:8080
+services:
+  youtube-creator-toolkit:
+    build: .
+    image: youtube-creator-toolkit:latest
+    container_name: youtube-creator-toolkit
+    ports:
+      - "8080:80"
+    restart: unless-stopped

@@ -1,0 +1,10 @@
+.git
+.github
+proxy
+blog-src
+scripts
+tests
+*.md
+Dockerfile
+docker-compose.yml
+.dockerignore

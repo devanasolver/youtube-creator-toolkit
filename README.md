@@ -4,6 +4,8 @@ Free, honest tools for YouTube creators. Most tools run entirely in the browser.
 
 **Live site:** https://devanasolver.github.io/youtube-creator-toolkit/
 
+[![Deploy on Hostinger](https://assets.hostinger.com/vps/deploy.svg)](https://www.hostinger.com/docker-hosting?compose_url=https://raw.githubusercontent.com/devanasolver/youtube-creator-toolkit/refs/heads/main/docker-compose.yml&REFERRALCODE=MOLTBOT)
+
 ## Tools
 
 - **Thumbnail Grabber** - paste any YouTube link (watch, youtu.be, Shorts, embed or a bare video ID) and download every available thumbnail size, straight from YouTube's image CDN.
@@ -92,6 +94,16 @@ python3 -m http.server 8000
 ## Deploy
 
 The site is a static page served with GitHub Pages from the `main` branch root.
+
+### Self-host with Docker
+
+The button at the top deploys the toolkit on a Hostinger VPS in one click. Anywhere else with Docker:
+
+```
+docker compose up -d --build
+```
+
+Then open http://localhost:8080. The image serves the site with nginx and forwards the four YouTube-data endpoints (`/api/*`) to the free hosted proxy server-side, so Transcript Download, Channel Stats Lookup, Keyword & Tag Suggestions and Video Public Stats work from any origin without browser CORS limits.
 
 ## Support
 
